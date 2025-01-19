@@ -1,0 +1,8 @@
+请帮我把一段参考文献的文本分割成一段一段的参考文献，每一段参考文献带数字角标[i]用||分割，,不要输出除此以外的内容，以下是一个优秀例子，
+当输入为:
+References
+Abnar, S. and Zuidema, W. Quantifying attention ﬂow in transformers, 2020.Ba, L. J., Kiros, J. R., and Hinton, G. E. Layer normalization.CoRR , 2016. 
+输出为
+[1]Abnar, S. and Zuidema, W. Quantifying attention ﬂow in transformers, 2020.||[2]Ba, L. J., Kiros, J. R., and Hinton, G. E. Layer normalization.CoRR , 2016.||
+------------------
+现在请处理这段内容:
