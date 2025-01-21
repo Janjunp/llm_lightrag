@@ -35,7 +35,6 @@ def get_references(references_text):
 
 def insert(working_dir, path):
 
-    init()
     rag = LightRAG(
     working_dir=working_dir,
     llm_model_func=ollama_model_complete,
@@ -62,7 +61,7 @@ if __name__ == "__main__":
     if not os.path.exists(working_dir):
         os.mkdir(working_dir)
     
-    
+    init()
 
     pdf_path = "twostream.pdf"  # 替换为实际文件路径
     references_text, txt_path= extract_references_from_pdf(pdf_path) #references_text是提取的参考文献文本，
@@ -75,5 +74,4 @@ if __name__ == "__main__":
     #mode="hybrid" #搜索模式一共有"naive"、"local"、"global"、"hybrid"四种
     
     print(rag.query("介绍一下论文的主要内容", param=QueryParam(mode="hybrid")))
-
 

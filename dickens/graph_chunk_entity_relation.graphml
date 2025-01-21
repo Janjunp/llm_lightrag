@@ -6,1382 +6,953 @@
 <key id="d2" for="node" attr.name="source_id" attr.type="string"/>
 <key id="d1" for="node" attr.name="description" attr.type="string"/>
 <key id="d0" for="node" attr.name="entity_type" attr.type="string"/>
-<graph edgedefault="undirected"><node id="&quot;AGGRESSIVE DROPOUT RATIO OF 0.9&quot;">
+<graph edgedefault="undirected"><node id="&quot;SLOW FUSION SPATIO-TEMPORAL CONVNET&quot;">
   <data key="d0">"TECHNOLOGY"</data>
-  <data key="d1">"The aggressive dropout ratio of 0.9 is a technique used to improve generalization during training of ConvNets."</data>
-  <data key="d2">chunk-eb84389e2cb0fb2dfc96d4777be87037</data>
-</node>
-<node id="&quot;MULTI-GPU TRAINING&quot;">
-  <data key="d0">"EVENT"</data>
-  <data key="d1">"Multi-GPU training is a significant modification in the implementation that leads to a speed-up in the training process."</data>
-  <data key="d2">chunk-e09f3481cc62389e84f21a06f6eb3d7f</data>
-</node>
-<node id="&quot;IDT (IMPROVED DENSE TRAJECTORIES)&quot;">
-  <data key="d0">"TECHNOLOGY"</data>
-  <data key="d1">"A method used as a benchmark in the experiments, involving dense trajectories and encoding techniques."</data>
+  <data key="d1">"The Slow Fusion spatio-temporal ConvNet uses a simpler approach and underperforms in comparison to the Two-stream model."</data>
   <data key="d2">chunk-86f4b10d1cdb4e6ca763c0d4de0db9cd</data>
 </node>
-<node id="&quot;IMAGENET ILSVRC-2012&quot;">
-  <data key="d0">"ORGANIZATION"</data>
-  <data key="d1">"ImageNet ILSVRC-2012 is a large-scale visual recognition benchmark for pre-training ConvNets, containing diverse image data for training and validation."</data>
-  <data key="d2">chunk-e09f3481cc62389e84f21a06f6eb3d7f</data>
-</node>
-<node id="&quot;UCF-101 AND HMDB-51 DATASETS&quot;">
-  <data key="d0">"ORGANIZATION"</data>
-  <data key="d1">"These are video classification datasets used for training the ConvNet models. UCF-101 has 9.5K videos, while HMDB-51 has 3.7K."</data>
-  <data key="d2">chunk-bb08a015abf427870e566013b6eb1dd2</data>
-</node>
-<node id="&quot;PRE-TRAINED + LAST LAYER UNI-DIRECTIONAL AVERAGING&quot;">
-  <data key="d0">"TECHNIQUE"</data>
-  <data key="d1">"A technique similar to bi-directional but uses only one direction for averaging in the last layer."</data>
+<node id="&quot;IDT WITH STACKED FISHER ENCODING&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"IDT with Stacked Fisher Encoding uses deep Fisher Nets and achieves better class recall on HMDB-51, still not as effective as the Two-stream model."</data>
   <data key="d2">chunk-86f4b10d1cdb4e6ca763c0d4de0db9cd</data>
 </node>
-<node id="&quot;OPTICAL FLOW VOLUME I&quot;">
-  <data key="d0">"CATEGORY"</data>
-  <data key="d1">"Optical flow volume I represents the computed optical flow for each pixel in the video frame, used as input in temporal ConvNet training."</data>
-  <data key="d2">chunk-bb08a015abf427870e566013b6eb1dd2</data>
-</node>
-<node id="&quot;CONVNET ARCHITECTURES&quot;">
+<node id="&quot;SPATIO-TEMPORAL HMAX NETWORK&quot;">
   <data key="d0">"TECHNOLOGY"</data>
-  <data key="d1">"ConvNet architectures are used for processing video data in action recognition tasks."</data>
-  <data key="d2">chunk-eb84389e2cb0fb2dfc96d4777be87037</data>
-</node>
-<node id="&quot;HMDB-51&quot;">
-  <data key="d0">"ORGANIZATION"</data>
-  <data key="d1">"Another dataset used for evaluating video action recognition models, containing 51 action categories."&lt;SEP&gt;"HMDB-51 is another dataset used for action recognition benchmarks, containing 6.8K videos across 51 actions."&lt;SEP&gt;"HMDB-51 is another dataset used for training and evaluating ConvNet architectures, distinct from UCF-101."&lt;SEP&gt;"HMDB-51 is another standard video actions benchmark dataset alongside UCF-101, also utilized for evaluating the Two-Stream Convolutional Networks."</data>
-  <data key="d2">chunk-86f4b10d1cdb4e6ca763c0d4de0db9cd&lt;SEP&gt;chunk-e09f3481cc62389e84f21a06f6eb3d7f&lt;SEP&gt;chunk-8c67a225b7a1ed3a8ac1fd7cde9eccc1&lt;SEP&gt;chunk-eb84389e2cb0fb2dfc96d4777be87037</data>
-</node>
-<node id="&quot;224X224X2L INPUT&quot;">
-  <data key="d0">"CATEGORY"</data>
-  <data key="d1">"A fixed-size 224x224x2L input is randomly cropped from the optical flow volume I for use in temporal net training."</data>
-  <data key="d2">chunk-bb08a015abf427870e566013b6eb1dd2</data>
-</node>
-<node id="&quot;VIDEO FRAMES&quot;">
-  <data key="d0">"CATEGORY"</data>
-  <data key="d1">"Video frames are the individual images that make up the video, used as input for training and testing the ConvNet models."</data>
-  <data key="d2">chunk-bb08a015abf427870e566013b6eb1dd2</data>
-</node>
-<node id="&quot;PRE-TRAINED + LAST LAYER BI-DIRECTIONAL AVERAGING&quot;">
-  <data key="d0">"TECHNIQUE"</data>
-  <data key="d1">"A technique where the pre-trained network uses bi-directional averaging in its last layer for improved accuracy."</data>
+  <data key="d1">"The Spatio-temporal HMAX network is an older method that performs poorly compared to more recent techniques like the Two-stream model."</data>
   <data key="d2">chunk-86f4b10d1cdb4e6ca763c0d4de0db9cd</data>
 </node>
-<node id="&quot;TESTING FRAMES&quot;">
-  <data key="d0">"CATEGORY"</data>
-  <data key="d1">"At test time, a fixed number of evenly spaced frames are sampled from a video to obtain multiple ConvNet inputs for prediction."</data>
-  <data key="d2">chunk-bb08a015abf427870e566013b6eb1dd2</data>
-</node>
-<node id="&quot;SPATIAL CONVNET&quot;">
+<node id="&quot;IMPROVED DENSE TRAJECTORIES (IDT)&quot;">
   <data key="d0">"TECHNOLOGY"</data>
-  <data key="d1">"Spatial ConvNet is another type of ConvNet used for processing spatial information in action recognition tasks."</data>
-  <data key="d2">chunk-eb84389e2cb0fb2dfc96d4777be87037</data>
-</node>
-<node id="&quot;TOP-5 ERROR 13.5% ON ILSVRC-2012 VALIDATION SET&quot;">
-  <data key="d0">"EVENT"</data>
-  <data key="d1">"The ConvNet architecture achieved a top-5 error rate of 13.5% on the ILSVRC-2012 validation set, indicating its performance in still image classification."</data>
-  <data key="d2">chunk-bb08a015abf427870e566013b6eb1dd2</data>
-</node>
-<node id="&quot;256 SUB-IMAGE&quot;">
-  <data key="d0">"CATEGORY"</data>
-  <data key="d1">"A 224x224 sub-image is randomly cropped from a selected frame in spatial net training to reduce image size while retaining important features."</data>
-  <data key="d2">chunk-bb08a015abf427870e566013b6eb1dd2</data>
-</node>
-<node id="&quot;MULTI-TASK LEARNING&quot;">
-  <data key="d0">"CATEGORY"</data>
-  <data key="d1">"A technique used to train both spatial and temporal ConvNets, enhancing their performance."&lt;SEP&gt;"Multi-task Learning refers to the practice of training a model on multiple related tasks simultaneously to improve performance on each task."&lt;SEP&gt;"Multi-task learning is a technique used to train the network on multiple tasks simultaneously, generalizing better across different datasets."</data>
-  <data key="d2">chunk-bb08a015abf427870e566013b6eb1dd2&lt;SEP&gt;chunk-86f4b10d1cdb4e6ca763c0d4de0db9cd&lt;SEP&gt;chunk-eb84389e2cb0fb2dfc96d4777be87037</data>
-</node>
-<node id="&quot;CAFFE TOOLBOX&quot;">
-  <data key="d0">"ORGANIZATION"</data>
-  <data key="d1">"Caffe is a popular deep learning framework used in the implementation described, providing a platform for multi-GPU training and other modifications."</data>
-  <data key="d2">chunk-e09f3481cc62389e84f21a06f6eb3d7f</data>
-</node>
-<node id="&quot;STACKING TECHNIQUES&quot;">
-  <data key="d0">"CATEGORY"</data>
-  <data key="d1">"Stacking techniques include multiple displacement fields, mean subtraction, and optical flow stacking."</data>
-  <data key="d2">chunk-eb84389e2cb0fb2dfc96d4777be87037</data>
-</node>
-<node id="&quot;ALEX&quot;">
-  <data key="d0">"PERSON"</data>
-  <data key="d1">"Alex is involved in the pre-training process and evaluates the ConvNets on UCF-101 and HMDB-51."</data>
-  <data key="d2">chunk-e09f3481cc62389e84f21a06f6eb3d7f</data>
-</node>
-<node id="&quot;SLOW FUSION ARCHITECTURE&quot;">
-  <data key="d0">"TECHNOLOGY"</data>
-  <data key="d1">"The slow fusion architecture involves applying ConvNets to stacks of RGB frames and is used for action recognition."</data>
-  <data key="d2">chunk-eb84389e2cb0fb2dfc96d4777be87037</data>
-</node>
-<node id="&quot;SPATIAL NET&quot;">
-  <data key="d0">"TECHNOLOGY"</data>
-  <data key="d1">"A pre-trained network focusing on spatial recognition in video frames."&lt;SEP&gt;"Spatial Net refers to a ConvNet architecture that processes spatial features independently before combining them with temporal features."</data>
-  <data key="d2">chunk-86f4b10d1cdb4e6ca763c0d4de0db9cd&lt;SEP&gt;chunk-34a54fcc59f0d516a7e1556a7de2f32b</data>
-</node>
-<node id="&quot;DONATION OF GPUS&quot;">
-  <data key="d0">"EVENT"</data>
-  <data key="d1">"The donation of GPUs is a significant event in the context of this research, likely indicating support or resources for the project."</data>
-  <data key="d2">chunk-667a0a2b5957ead16915a7cfad43c8de</data>
-</node>
-<node id="&quot;FISHER VECTOR ENCODING&quot;">
-  <data key="d0">"TECHNOLOGY"</data>
-  <data key="d1">"Fisher vector encoding is used to encode spatio-temporal features for video recognition, as an improvement over hand-crafted representations."</data>
-  <data key="d2">chunk-bea5c00b3143ba4861cf69fe7d94037c</data>
-</node>
-<node id="&quot;FUSION METHOD&quot;">
-  <data key="d0">"CATEGORY"</data>
-  <data key="d1">"The method of combining the outputs from the Spatial ConvNet and Temporal ConvNet for improved results."</data>
+  <data key="d1">"IDT is an older method used for video classification, performing decently but not as well as the proposed models."</data>
   <data key="d2">chunk-86f4b10d1cdb4e6ca763c0d4de0db9cd</data>
 </node>
-<node id="&quot;DEEPFLOW: LARGE DISPLACEMENT OPTICAL FLOW WITH DEEP MATCHING, FISHER KERNEL FOR LARGE-SCALE IMAGE CLASSIFICATION, DEEP FISHER NETWORKS, CONVOLUTIONAL LEARNING OF SPATIO-TEMPORAL FEATURES, EVALUATION OF LOCAL SPATIO-TEMPORAL FEATURES FOR ACTION RECOGNITION, ACTION RECOGNITION BY DENSE TRAJECTORIES, ACTION RECOGNITION WITH IMPROVED TRAJECTORIES, LEAR-INRIA SUBMISSION FOR THE THUMOS WORKSHOP&quot;">
+<node id="&quot;DEEP FISHER NET&quot;">
   <data key="d0">"TECHNOLOGY"</data>
-  <data key="d1">"These are the technologies and techniques presented in various papers."</data>
-  <data key="d2">chunk-640259871e7614dd8e5d3e2cd2bf19ea</data>
+  <data key="d1">"The Deep Fisher Net is a component of IDT with Stacked Fisher Encoding, providing better performance on HMDB-51."</data>
+  <data key="d2">chunk-86f4b10d1cdb4e6ca763c0d4de0db9cd</data>
 </node>
-<node id="&quot;HAND-CRAFTED REPRESENTATION&quot;">
-  <data key="d0">"TECHNOLOGY"</data>
-  <data key="d1">"Hand-crafted representations are traditional methods of creating features for video recognition, including compensation for global camera motion and the use of HMAX architectures."</data>
-  <data key="d2">chunk-bea5c00b3143ba4861cf69fe7d94037c</data>
-</node>
-<node id="&quot;KINEMATIC FEATURES&quot;">
-  <data key="d0">"FEATURE"</data>
-  <data key="d1">"Kinematic features such as divergence, curl, and shear are derived from the optical flow gradient and are used to describe motion patterns."</data>
-  <data key="d2">chunk-34a54fcc59f0d516a7e1556a7de2f32b</data>
-</node>
-<node id="&quot;HMAX ARCHITECTURE&quot;">
-  <data key="d0">"ORGANIZATION"</data>
-  <data key="d1">"The HMAX architecture is a pre-defined spatio-temporal filter model used in video recognition, combining spatial and temporal recognition streams."</data>
-  <data key="d2">chunk-bea5c00b3143ba4861cf69fe7d94037c</data>
-</node>
-<node id="&quot;TRAJECTORY FEATURE&quot;">
-  <data key="d0">"FEATURE"</data>
-  <data key="d1">"The Trajectory feature is computed by stacking displacement vectors along a trajectory path, providing a way to represent motion in videos."</data>
-  <data key="d2">chunk-34a54fcc59f0d516a7e1556a7de2f32b</data>
-</node>
-<node id="&quot;HOF (HISTOGRAM OF ORIENTED GRADIENTS)&quot;">
-  <data key="d0">"DESCRIPTOR"</data>
-  <data key="d1">"HOF is a descriptor based on the histograms of orientations of optical flow or its gradient, used for feature extraction from images and video frames."</data>
-  <data key="d2">chunk-34a54fcc59f0d516a7e1556a7de2f32b</data>
-</node>
-<node id="&quot;MBH (MIXED BLOCK HISTOGRAMS)&quot;">
-  <data key="d0">"DESCRIPTOR"</data>
-  <data key="d1">"MBH is another descriptor that generalizes HOF by incorporating more complex block structures into the histogram."</data>
-  <data key="d2">chunk-34a54fcc59f0d516a7e1556a7de2f32b</data>
-</node>
-<node id="&quot;UCF-101 DATASET&quot;">
-  <data key="d0">"LOCATION"</data>
-  <data key="d1">"The UCF-101 dataset is a collection of videos, commonly used for training and testing action recognition models."&lt;SEP&gt;"UCF-101 dataset is a benchmark for action classification tasks, comprising videos of sports activities."</data>
-  <data key="d2">chunk-34a54fcc59f0d516a7e1556a7de2f32b&lt;SEP&gt;chunk-bea5c00b3143ba4861cf69fe7d94037c</data>
-</node>
-<node id="&quot;DISPLACEMENT FIELD D&quot;">
+<node id="&quot;GENERIC ASSUMPTIONS OF CONSTANCY AND SMOOTHNESS&quot;">
   <data key="d0">"CONCEPT"</data>
-  <data key="d1">"A Displacement field d represents the movement of pixels from one frame to another, used in Optical Flow analysis."</data>
-  <data key="d2">chunk-34a54fcc59f0d516a7e1556a7de2f32b</data>
+  <data key="d1">"These generic assumptions guide the computation of optical flow in the Temporal ConvNet."</data>
+  <data key="d2">chunk-86f4b10d1cdb4e6ca763c0d4de0db9cd</data>
 </node>
 <node id="&quot;KAREN SIMONYAN&quot;">
   <data key="d0">"PERSON"</data>
-  <data key="d1">"Karen Simonyan is a co-author of the paper and contributes to the design of the two-stream architecture."</data>
+  <data key="d1">"Karen Simonyan is one of the authors contributing to the research on Two-Stream Convolutional Networks."</data>
   <data key="d2">chunk-8c67a225b7a1ed3a8ac1fd7cde9eccc1</data>
 </node>
-<node id="&quot;SPATIO-TEMPORAL LOCAL FEATURES&quot;">
-  <data key="d0">"FEATURE"</data>
-  <data key="d1">"Spatio-temporal local features are computed from the optical flow and include descriptors like HOF and MBH, which capture motion information in videos."</data>
-  <data key="d2">chunk-34a54fcc59f0d516a7e1556a7de2f32b</data>
+<node id="&quot;ANDREW ZISSERMAN&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"Andrew Zisserman is an author and co-contributor to the research on Two-Stream Convolutional Networks."</data>
+  <data key="d2">chunk-8c67a225b7a1ed3a8ac1fd7cde9eccc1</data>
 </node>
-<node id="&quot;TWO-STREAM MODEL (FUSION BY SVM)&quot;">
-  <data key="d0">"MODEL"</data>
-  <data key="d1">"A model combining spatial and temporal streams using SVM for fusion, showing even higher accuracy."</data>
+<node id="&quot;CONVNET&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"ConvNet (Convolutional Neural Network) is used in processing and analyzing optical flow data for video representations."&lt;SEP&gt;"ConvNet is a type of neural network architecture used for processing visual data, particularly in tasks like image classification and optical flow analysis."&lt;SEP&gt;"ConvNet is a type of neural network, specifically designed for image and video recognition tasks."&lt;SEP&gt;"ConvNet stands for Convolutional Neural Network, a deep learning model often used in image recognition tasks. The text discusses its use in both spatial and temporal contexts."</data>
+  <data key="d2">chunk-e09f3481cc62389e84f21a06f6eb3d7f&lt;SEP&gt;chunk-34a54fcc59f0d516a7e1556a7de2f32b&lt;SEP&gt;chunk-cf87ec63a4b1e44cb5a04807041bf1c1&lt;SEP&gt;chunk-bb08a015abf427870e566013b6eb1dd2</data>
+</node>
+<node id="&quot;HAND-CRAFTED FEATURES&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"Hand-crafted features refer to manually engineered feature extraction methods that have been traditionally used in computer vision tasks."</data>
+  <data key="d2">chunk-8c67a225b7a1ed3a8ac1fd7cde9eccc1</data>
+</node>
+<node id="&quot;LARGE VIDEO DATASETS&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"Large video datasets are mentioned as potential sources for future training, but not yet utilized extensively due to size constraints."</data>
   <data key="d2">chunk-86f4b10d1cdb4e6ca763c0d4de0db9cd</data>
 </node>
-<node id="&quot;DROPOUT REGULARIZATION&quot;">
-  <data key="d0">"TECHNIQUE"</data>
-  <data key="d1">"Dropout regularization is used to prevent overfitting and improve model generalization, with settings ranging from 0.5 to 0.9."</data>
-  <data key="d2">chunk-e09f3481cc62389e84f21a06f6eb3d7f</data>
+<node id="&quot;CVPR&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Conference on Computer Vision and Pattern Recognition, an annual conference focused on computer vision research."</data>
+  <data key="d2">chunk-667a0a2b5957ead16915a7cfad43c8de</data>
 </node>
-<node id="&quot;TEMPORAL DERIVATIVES&quot;">
-  <data key="d0">"CATEGORY"</data>
-  <data key="d1">"Temporal derivatives capture changes in motion over time."</data>
-  <data key="d2">chunk-bb08a015abf427870e566013b6eb1dd2</data>
+<node id="&quot;DEEP CONVOLUTIONAL NETWORKS (CONVNETS)&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"Deep Convolutional Networks, also known as ConvNets, are neural network architectures used for image and video processing."</data>
+  <data key="d2">chunk-8c67a225b7a1ed3a8ac1fd7cde9eccc1</data>
 </node>
-<node id="&quot;NIPS&quot;">
+<node id="&quot;PROC. CVPR &quot;">
   <data key="d0">"EVENT"</data>
-  <data key="d1">"NIPS is an event where a paper on Deep Fisher networks for large-scale image classification was presented."</data>
+  <data key="d1">"Proc. CVPR (Conference on Computer Vision and Pattern Recognition) is an event where H. Wang, A. Kläser, C. Schmid, and C.-L. Liu presented their paper on 'Action recognition by dense trajectories'"</data>
   <data key="d2">chunk-640259871e7614dd8e5d3e2cd2bf19ea</data>
+</node>
+<node id="&quot;F. PERRONNIN, J. SÁNCHEZ, T. MENSINK&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"These individuals contributed to the paper on improving the Fisher kernel for large-scale image classification."</data>
+  <data key="d2">chunk-640259871e7614dd8e5d3e2cd2bf19ea</data>
+</node>
+<node id="&quot;KINEMATIC FEATURES&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"Kinematic features such as divergence, curl, and shear are computed from the optical flow gradient and captured by our convolutional model."</data>
+  <data key="d2">chunk-34a54fcc59f0d516a7e1556a7de2f32b</data>
 </node>
 <node id="&quot;K. SIMONYAN, A. VEDALDI, A. ZISSERMAN&quot;">
   <data key="d0">"PERSON"</data>
-  <data key="d1">"These are the authors of a paper on Deep Fisher networks for large-scale image classification."</data>
+  <data key="d1">"These individuals contributed to the paper on deep Fisher networks for large-scale image classification."</data>
   <data key="d2">chunk-640259871e7614dd8e5d3e2cd2bf19ea</data>
+</node>
+<node id="&quot;SPATIAL RECEPTIVE FIELD&quot;">
+  <data key="d0">"CONCEPT"</data>
+  <data key="d1">"Spatial receptive field refers to the area that a filter covers on an image or feature map."</data>
+  <data key="d2">chunk-bb08a015abf427870e566013b6eb1dd2</data>
+</node>
+<node id="&quot;IDT WITH HIGHER-DIMENSIONAL ENCODINGS&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"IDT with Higher-Dimensional Encodings is a method that improves accuracy but falls short compared to the proposed Two-stream model."</data>
+  <data key="d2">chunk-86f4b10d1cdb4e6ca763c0d4de0db9cd</data>
+</node>
+<node id="&quot;TRAJECTORY FEATURE&quot;">
+  <data key="d0">"CONCEPT"</data>
+  <data key="d1">"The trajectory feature is a descriptor computed by stacking displacement vectors along the trajectory, which corresponds to the trajectory stacking in the ConvNet architecture."</data>
+  <data key="d2">chunk-34a54fcc59f0d516a7e1556a7de2f32b</data>
 </node>
 <node id="&quot;K. SOOMRO, A. R. ZAMIR, M. SHAH&quot;">
   <data key="d0">"PERSON"</data>
-  <data key="d1">"These are the authors who created UCF101, a dataset of 101 human action classes from videos in the wild."</data>
+  <data key="d1">"These individuals developed UCF101, a dataset of 101 human action classes from videos in the wild."</data>
   <data key="d2">chunk-640259871e7614dd8e5d3e2cd2bf19ea</data>
+</node>
+<node id="&quot;HOF AND MBH LOCAL DESCRIPTORS&quot;">
+  <data key="d0">"CONCEPT"</data>
+  <data key="d1">"HOF (Histogram of Oriented Gradients) and MBH (Multi-Band Histogram) local descriptors are based on the histograms of orientations of optical flow or its gradient, which can be obtained using a single convolutional layer."</data>
+  <data key="d2">chunk-34a54fcc59f0d516a7e1556a7de2f32b</data>
+</node>
+<node id="&quot;TWO-STREAM MODEL (FUSION BY SVM)&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"The Two-stream model fuses the outputs of Spatial and Temporal ConvNets using an SVM method, showing even better performance than averaging."</data>
+  <data key="d2">chunk-86f4b10d1cdb4e6ca763c0d4de0db9cd</data>
 </node>
 <node id="&quot;G. W. TAYLOR, R. FERGUS, Y. LECUN, C. BREGLER&quot;">
   <data key="d0">"PERSON"</data>
   <data key="d1">"These researchers worked on convolutional learning of spatio-temporal features."</data>
   <data key="d2">chunk-640259871e7614dd8e5d3e2cd2bf19ea</data>
 </node>
-<node id="&quot;TEMPORAL CONVNET ARCHITECTURE&quot;">
-  <data key="d0">"ARCHITECTURE"</data>
-  <data key="d1">"The Temporal ConvNet architecture combines multiple optical flow displacement fields into a single volume to process and analyze video data."</data>
-  <data key="d2">chunk-34a54fcc59f0d516a7e1556a7de2f32b</data>
-</node>
-<node id="&quot;SAMPLING FROM IMAGENET TRAINING DATA AUGMENTATION&quot;">
-  <data key="d0">"CATEGORY"</data>
-  <data key="d1">"The spatial ConvNet uses the same data augmentation techniques as ImageNet for pre-training, enhancing generalization and performance."</data>
-  <data key="d2">chunk-bb08a015abf427870e566013b6eb1dd2</data>
-</node>
-<node id="&quot;OPTICAL FLOW&quot;">
+<node id="&quot;GPUS&quot;">
   <data key="d0">"TECHNOLOGY"</data>
-  <data key="d1">"Optical Flow refers to the displacement fields that specify pixel locations in consecutive frames. It is used for analyzing motion between frames."&lt;SEP&gt;"Optical flow is a technique used to estimate motion between consecutive frames in video sequences."</data>
-  <data key="d2">chunk-34a54fcc59f0d516a7e1556a7de2f32b&lt;SEP&gt;chunk-bea5c00b3143ba4861cf69fe7d94037c</data>
-</node>
-<node id="&quot;MEAN SUBTRACTION&quot;">
-  <data key="d0">"TECHNIQUE"</data>
-  <data key="d1">"Mean subtraction is a technique used in optical flow processing to center the data around zero, aiding in better model performance."</data>
-  <data key="d2">chunk-e09f3481cc62389e84f21a06f6eb3d7f</data>
-</node>
-<node id="&quot;CONVOLUTIONAL RBM&quot;">
-  <data key="d0">"TECHNOLOGY"</data>
-  <data key="d1">"Convolutional RBM (Restricted Boltzmann Machine) is a type of neural network used for unsupervised learning of spatio-temporal features."</data>
-  <data key="d2">chunk-bea5c00b3143ba4861cf69fe7d94037c</data>
-</node>
-<node id="&quot;R. COLLOBERT AND J. WESTON&quot;">
-  <data key="d0">"PERSON"</data>
-  <data key="d1">"These individuals are the authors of a paper on a unified architecture for natural language processing."</data>
+  <data key="d1">"GPUs are computational hardware used in research to process data, likely in a deep learning context."</data>
   <data key="d2">chunk-667a0a2b5957ead16915a7cfad43c8de</data>
-</node>
-<node id="&quot;DEEP CONVNETS&quot;">
-  <data key="d0">"TECHNOLOGY"</data>
-  <data key="d1">"Deep Convolutional Neural Networks (ConvNets) are used for learning spatio-temporal features and recognizing actions in video sequences."</data>
-  <data key="d2">chunk-bea5c00b3143ba4861cf69fe7d94037c</data>
-</node>
-<node id="&quot;B. CHEN, J. A. TING, B. MARLIN, AND N. DE FREITAS&quot;">
-  <data key="d0">"PERSON"</data>
-  <data key="d1">"These individuals are the authors of a paper on deep learning methods for video."</data>
-  <data key="d2">chunk-667a0a2b5957ead16915a7cfad43c8de</data>
-</node>
-<node id="&quot;ISA (IMAGE SEQUENCE ALIGNMENT)&quot;">
-  <data key="d0">"TECHNOLOGY"</data>
-  <data key="d1">"ISA (Image Sequence Alignment) is another method used for unsupervised learning of spatio-temporal features in video recognition."</data>
-  <data key="d2">chunk-bea5c00b3143ba4861cf69fe7d94037c</data>
-</node>
-<node id="&quot;K. CHATFIELD, K. SIMONYAN, A. VEDALDI, AND A. ZISSERMAN&quot;">
-  <data key="d0">"PERSON"</data>
-  <data key="d1">"These individuals are the authors of a paper on deep learning methods."</data>
-  <data key="d2">chunk-667a0a2b5957ead16915a7cfad43c8de</data>
-</node>
-<node id="&quot;TWO-STREAM ARCHITECTURE&quot;">
-  <data key="d0">"CATEGORY"</data>
-  <data key="d1">"Two-stream architecture is a framework that divides video recognition into spatial and temporal streams to capture different aspects of the video."</data>
-  <data key="d2">chunk-bea5c00b3143ba4861cf69fe7d94037c</data>
-</node>
-<node id="&quot;SAM RIVERA&quot;">
-  <data key="d0">"PERSON"</data>
-  <data key="d1">"Sam Rivera contributes to the discussion about communication with an unknown intelligence, analogous to the team's interaction with the datasets and models."</data>
-  <data key="d2">chunk-e09f3481cc62389e84f21a06f6eb3d7f</data>
-</node>
-<node id="&quot;ACTION CLASSIFICATION&quot;">
-  <data key="d0">"CATEGORY"</data>
-  <data key="d1">"Action classification refers to the task of categorizing actions depicted in videos."</data>
-  <data key="d2">chunk-bea5c00b3143ba4861cf69fe7d94037c</data>
-</node>
-<node id="&quot;PRE-TRAINED + LAST LAYER UNI-DIRECTIONAL, MULTI-TASK AVERAGING&quot;">
-  <data key="d0">"TECHNIQUE"</data>
-  <data key="d1">"A technique combining uni-directional averaging with multi-task learning in the last layer."</data>
-  <data key="d2">chunk-86f4b10d1cdb4e6ca763c0d4de0db9cd</data>
-</node>
-<node id="&quot;PRE-TRAINED + LAST LAYER UNI-DIRECTIONAL, MULTI-TASK SVM&quot;">
-  <data key="d0">"TECHNIQUE"</data>
-  <data key="d1">"A technique using SVM for decision-making after uni-directional and multi-task training."</data>
-  <data key="d2">chunk-86f4b10d1cdb4e6ca763c0d4de0db9cd</data>
-</node>
-<node id="&quot;TRAJECTORY STACKING&quot;">
-  <data key="d0">"CATEGORY"</data>
-  <data key="d1">"Trajectory stacking combines multiple optical flows to enhance the model's ability to understand temporal dynamics in videos."&lt;SEP&gt;"Trajectory stacking is a stacking technique used in ConvNets for processing motion information."</data>
-  <data key="d2">chunk-e09f3481cc62389e84f21a06f6eb3d7f&lt;SEP&gt;chunk-eb84389e2cb0fb2dfc96d4777be87037</data>
-</node>
-<node id="&quot;SOFTMAX SCORES&quot;">
-  <data key="d0">"TECHNOLOGY"</data>
-  <data key="d1">"Softmax scores are used in deep neural networks to output probabilities for each class, often combined through late fusion methods."</data>
-  <data key="d2">chunk-bea5c00b3143ba4861cf69fe7d94037c</data>
-</node>
-<node id="&quot;G. W. TAYLOR, R. FERGUS, Y. LECUN, C. BREGLER, H. WANG, M. M. ULLAH, A. KLÄSER, I. LAPTEV, P. WEINZAEPFEL, J. REVAUD, Z. HARCHAOUI&quot;">
-  <data key="d0">"PERSON"</data>
-  <data key="d1">"These are the authors and researchers who contributed to various papers on image classification and action recognition."</data>
-  <data key="d2">chunk-640259871e7614dd8e5d3e2cd2bf19ea</data>
-</node>
-<node id="&quot;IMAGENET CHALLENGE DATASET&quot;">
-  <data key="d0">"CATEGORY"</data>
-  <data key="d1">"The ImageNet Challenge Dataset is a large-scale dataset widely used in deep learning research, pre-training the spatial net of the proposed architecture."</data>
-  <data key="d2">chunk-8c67a225b7a1ed3a8ac1fd7cde9eccc1</data>
-</node>
-<node id="&quot;DIVERGENCE&quot;">
-  <data key="d0">"KINEMATIC FEATURE"</data>
-  <data key="d1">"Divergence is a kinematic feature computed from the optical flow gradient, representing the measure of expansion or compression of motion vectors in video analysis."</data>
-  <data key="d2">chunk-34a54fcc59f0d516a7e1556a7de2f32b</data>
-</node>
-<node id="&quot;LATE FUSION&quot;">
-  <data key="d0">"TECHNOLOGY"</data>
-  <data key="d1">"Late fusion combines the outputs of multiple streams or models to improve recognition accuracy."</data>
-  <data key="d2">chunk-bea5c00b3143ba4861cf69fe7d94037c</data>
-</node>
-<node id="&quot;ECCV, NIPS, CVPR, BMVC, ICCV WORKSHOP ON ACTION RECOGNITION WITH A LARGE NUMBER OF CLASSES, PROC. BMVC, PROC. CVPR, PROC. ECCV, PROC. ICCV, PROC. ICCV, PROC. NIPS, ICCV WORKSHOP&quot;">
-  <data key="d0">"EVENT"</data>
-  <data key="d1">"These are the conferences and workshops where several papers were presented on topics such as image classification and action recognition."</data>
-  <data key="d2">chunk-640259871e7614dd8e5d3e2cd2bf19ea</data>
-</node>
-<node id="&quot;STACKED VIDEO FRAMES ARCHITECTURE&quot;">
-  <data key="d0">"TECHNOLOGY"</data>
-  <data key="d1">"Stacked Video Frames Architecture is a previously used approach for action recognition where multiple frames are fed into a network but did not perform as well as the Two-Stream Convolutional Networks."</data>
-  <data key="d2">chunk-8c67a225b7a1ed3a8ac1fd7cde9eccc1</data>
-</node>
-<node id="&quot;F. PERRONNIN, J. SÁNCHEZ, T. MENSINK&quot;">
-  <data key="d0">"PERSON"</data>
-  <data key="d1">"These are the authors of a paper on improving the Fisher kernel for large-scale image classification."</data>
-  <data key="d2">chunk-640259871e7614dd8e5d3e2cd2bf19ea</data>
-</node>
-<node id="&quot;MOTION BOUNDARY HISTOGRAM (MBH)&quot;">
-  <data key="d0">"TECHNOLOGY"</data>
-  <data key="d1">"MBH is a gradient-based feature computed on optical flow components that has shown good performance in trajectory-based video action recognition pipelines."&lt;SEP&gt;"The MBH is a gradient-based feature computed on the horizontal and vertical components of optical flow, providing one of the best performances in trajectory-based pipelines."</data>
-  <data key="d2">chunk-8c67a225b7a1ed3a8ac1fd7cde9eccc1&lt;SEP&gt;chunk-bea5c00b3143ba4861cf69fe7d94037c</data>
-</node>
-<node id="&quot;MEAN FLOW SUBTRACTION&quot;">
-  <data key="d0">"TECHNIQUE"</data>
-  <data key="d1">"Mean flow subtraction involves subtracting the mean vector from each displacement field to zero-center the network input, enhancing model exploitation of rectification non-linearities."</data>
-  <data key="d2">chunk-34a54fcc59f0d516a7e1556a7de2f32b</data>
-</node>
-<node id="&quot;MULTI-CLASS LINEAR SVM&quot;">
-  <data key="d0">"TECHNOLOGY"</data>
-  <data key="d1">"Multi-class Linear Support Vector Machine (SVM) is used for combining softmax scores from multiple layers or streams in late fusion methods."</data>
-  <data key="d2">chunk-bea5c00b3143ba4861cf69fe7d94037c</data>
 </node>
 <node id="&quot;H. WANG, C. SCHMID&quot;">
   <data key="d0">"ORGANIZATION"</data>
-  <data key="d1">"H. Wang and C. Schmid are the authors of papers on action recognition with improved trajectories and dense trajectories for action recognition."</data>
+  <data key="d1">"H. Wang and C. Schmid are the authors behind multiple publications including action recognition with improved trajectories, LEAR-INRIA submission for the THUMOS workshop, evaluation of local spatiotemporal features for action recognition, and action recognition by dense trajectories."</data>
   <data key="d2">chunk-640259871e7614dd8e5d3e2cd2bf19ea</data>
 </node>
-<node id="&quot;SECT. 6&quot;">
-  <data key="d0">"SECTION"</data>
-  <data key="d1">"Section 6 discusses action classification from still frames which is competitive on its own."</data>
-  <data key="d2">chunk-cf87ec63a4b1e44cb5a04807041bf1c1</data>
-</node>
-<node id="&quot;OPTICAL FLOW COMPUTATION&quot;">
-  <data key="d0">"TECHNOLOGY"</data>
-  <data key="d1">"Optical flow computation using the OpenCV toolbox helps in tracking motion in videos but requires pre-computation for efficiency."</data>
-  <data key="d2">chunk-e09f3481cc62389e84f21a06f6eb3d7f</data>
-</node>
-<node id="&quot;DENSE OPTICAL FLOW&quot;">
-  <data key="d0">"TECHNOLOGY"</data>
-  <data key="d1">"Dense Optical Flow refers to the computation of dense pixel-wise motion vectors across frames, used for training temporal streams in the Two-Stream Convolutional Networks."</data>
-  <data key="d2">chunk-8c67a225b7a1ed3a8ac1fd7cde9eccc1</data>
-</node>
-<node id="&quot;CURL&quot;">
-  <data key="d0">"KINEMATIC FEATURE"</data>
-  <data key="d1">"Curl is a kinematic feature derived from the optical flow gradient, indicating rotational movement within the video frames."</data>
-  <data key="d2">chunk-34a54fcc59f0d516a7e1556a7de2f32b</data>
-</node>
-<node id="&quot;96FILTERS&quot;">
-  <data key="d0">"CATEGORY"</data>
-  <data key="d1">"96 ﬁlters are components of a neural network architecture, each having a spatial receptive field and corresponding to specific optical flow displacement fields."</data>
-  <data key="d2">chunk-bb08a015abf427870e566013b6eb1dd2</data>
-</node>
-<node id="&quot;SHEAR&quot;">
-  <data key="d0">"KINEMATIC FEATURE"</data>
-  <data key="d1">"Shear is a kinematic feature based on the optical flow gradient, representing lateral displacement or shearing motion in videos."</data>
-  <data key="d2">chunk-34a54fcc59f0d516a7e1556a7de2f32b</data>
-</node>
-<node id="&quot;77PIXELS&quot;">
-  <data key="d0">"CATEGORY"</data>
-  <data key="d1">"7x7 pixels represent the size of the spatial receptive field for each filter in the convolutional layer."</data>
-  <data key="d2">chunk-bb08a015abf427870e566013b6eb1dd2</data>
-</node>
-<node id="&quot;H. KUEHNE, H. JHUANG, E. GARROTE, T. POGGIO, AND T. SERRE&quot;">
-  <data key="d0">"PERSON"</data>
-  <data key="d1">"These individuals are the authors of a paper on HMDB: A large video database for human motion recognition."</data>
+<node id="&quot;ILSVRC&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"The Large Scale Visual Recognition Challenge (ILSVRC) is a well-known challenge in computer vision."</data>
   <data key="d2">chunk-667a0a2b5957ead16915a7cfad43c8de</data>
+</node>
+<node id="&quot;H. WANG, M. M. ULLAH, A. KLÄSER, I. LAPTEV, C. SCHMID, C.-L. LIU&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"This group of researchers contributed to the paper on evaluating local spatiotemporal features for action recognition."</data>
+  <data key="d2">chunk-640259871e7614dd8e5d3e2cd2bf19ea</data>
+</node>
+<node id="&quot;ICCV WORKSHOP ON ACTION RECOGNITION WITH A LARGE NUMBER OF CLASSES &quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"This workshop was part of ICCV where H. Wang and colleagues submitted their work."</data>
+  <data key="d2">chunk-640259871e7614dd8e5d3e2cd2bf19ea</data>
+</node>
+<node id="&quot;P. WEINZAEPFEL, J. REVAUD, Z. HARCHAOUI, C. SCHMID&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"These individuals worked on DeepFlow: Large displacement optical flow with deep matching."</data>
+  <data key="d2">chunk-640259871e7614dd8e5d3e2cd2bf19ea</data>
 </node>
 <node id="&quot;UCF-101&quot;">
-  <data key="d0">"ORGANIZATION"</data>
-  <data key="d1">"A dataset used for evaluating video action recognition models, containing 101 action categories."&lt;SEP&gt;"UCF-101 is a dataset used for action recognition benchmarks, containing 13K videos across 101 classes."&lt;SEP&gt;"UCF-101 is a dataset used for training ConvNet architectures in action recognition tasks."&lt;SEP&gt;"UCF-101 is a standard video actions benchmark dataset used to evaluate the performance of the Two-Stream Convolutional Networks."</data>
-  <data key="d2">chunk-86f4b10d1cdb4e6ca763c0d4de0db9cd&lt;SEP&gt;chunk-e09f3481cc62389e84f21a06f6eb3d7f&lt;SEP&gt;chunk-8c67a225b7a1ed3a8ac1fd7cde9eccc1&lt;SEP&gt;chunk-eb84389e2cb0fb2dfc96d4777be87037</data>
-</node>
-<node id="&quot;20 INPUT CHANNELS&quot;">
-  <data key="d0">"CATEGORY"</data>
-  <data key="d1">"20 input channels correspond to the horizontal (dx) and vertical (dy) components of 10 stacked optical flow displacement fields."</data>
-  <data key="d2">chunk-bb08a015abf427870e566013b6eb1dd2</data>
-</node>
-<node id="&quot;CONVNET (CONVOLUTIONAL NEURAL NETWORK)&quot;">
-  <data key="d0">"TECHNOLOGY"</data>
-  <data key="d1">"ConvNet is a type of deep learning architecture used for processing input volumes and extracting features."</data>
-  <data key="d2">chunk-34a54fcc59f0d516a7e1556a7de2f32b</data>
-</node>
-<node id="&quot;OPTICAL FLOW DISPLACEMENT FIELDS D&quot;">
-  <data key="d0">"CATEGORY"</data>
-  <data key="d1">"Optical flow displacement fields are used to capture motion information, represented by dx and dy components."</data>
-  <data key="d2">chunk-bb08a015abf427870e566013b6eb1dd2</data>
-</node>
-<node id="&quot;F. PERRONNIN, J. S ´ANCHEZ, AND T. MENSINK&quot;">
-  <data key="d0">"PERSON"</data>
-  <data key="d1">"These individuals are the authors of a paper on improving the Fisher kernel for large-scale image classification."</data>
-  <data key="d2">chunk-667a0a2b5957ead16915a7cfad43c8de</data>
-</node>
-<node id="&quot;SPATIAL DERIVATIVES&quot;">
-  <data key="d0">"CATEGORY"</data>
-  <data key="d1">"Spatial derivatives refer to how motion changes with image location, capturing derivative-based hand-crafted descriptors like MBH."</data>
-  <data key="d2">chunk-bb08a015abf427870e566013b6eb1dd2</data>
-</node>
-<node id="&quot;Q. V . LE, W. Y . ZOU, S. Y . YEUNG, AND A. Y . NG&quot;">
-  <data key="d0">"PERSON"</data>
-  <data key="d1">"These individuals are the authors of a paper on deep Fisher networks for large-scale image classification."</data>
-  <data key="d2">chunk-667a0a2b5957ead16915a7cfad43c8de</data>
-</node>
-<node id="&quot;UCF101, A DATASET OF 101 HUMAN ACTIONS CLASSES FROM VIDEOS IN THE WILD&quot;">
-  <data key="d0">"CATEGORY"</data>
-  <data key="d1">"UCF101 is a category representing the dataset created by K. Soomro et al."</data>
-  <data key="d2">chunk-640259871e7614dd8e5d3e2cd2bf19ea</data>
-</node>
-<node id="&quot;H. WANG, M. M. ULLAH, A. KLÄSER, I. LAPTEV, C. SCHMID&quot;">
-  <data key="d0">"ORGANIZATION"</data>
-  <data key="d1">"This group evaluated local spatio-temporal features for action recognition."</data>
-  <data key="d2">chunk-640259871e7614dd8e5d3e2cd2bf19ea</data>
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"UCF-101 is a benchmark dataset for video action recognition used to evaluate the performance of Two-Stream Convolutional Networks."&lt;SEP&gt;"UCF-101 is a dataset used for evaluating the performance of video classification models."&lt;SEP&gt;"UCF-101 is an action recognition benchmark dataset containing 13,000 videos, each with 180 frames on average, annotated into 101 action classes. It is used for evaluating the performance of ConvNets."</data>
+  <data key="d2">chunk-e09f3481cc62389e84f21a06f6eb3d7f&lt;SEP&gt;chunk-86f4b10d1cdb4e6ca763c0d4de0db9cd&lt;SEP&gt;chunk-8c67a225b7a1ed3a8ac1fd7cde9eccc1</data>
 </node>
 <node id="&quot;M. D. ZEILER, R. FERGUS&quot;">
   <data key="d0">"PERSON"</data>
-  <data key="d1">"These are the authors who visualized and understood convolutional networks."</data>
+  <data key="d1">"These researchers visualized and understood convolutional networks."</data>
+  <data key="d2">chunk-640259871e7614dd8e5d3e2cd2bf19ea</data>
+</node>
+<node id="&quot;G. W. TAYLOR, R. FERGUS, Y . LECUN, C. BREGLER&quot;">
+  <data key="d0">"PERSON"</data>
+  <data key="d1">"These researchers worked on convolutional learning of spatio-temporal features."</data>
   <data key="d2">chunk-640259871e7614dd8e5d3e2cd2bf19ea</data>
 </node>
 <node id="&quot;TEMPORAL CONVNET&quot;">
   <data key="d0">"TECHNOLOGY"</data>
-  <data key="d1">"A type of ConvNet trained specifically to recognize patterns over time using optical flow as input."&lt;SEP&gt;"Temporal ConvNet refers to a ConvNet architecture designed to process temporal information, such as video data."</data>
-  <data key="d2">chunk-86f4b10d1cdb4e6ca763c0d4de0db9cd&lt;SEP&gt;chunk-eb84389e2cb0fb2dfc96d4777be87037</data>
+  <data key="d1">"Temporal ConvNet is a deep learning model used for action recognition by processing temporal information from video frames."&lt;SEP&gt;"Temporal ConvNet is another type of Convolutional Neural Network used for temporal processing, often involving sequence data like video frames."&lt;SEP&gt;"The Temporal ConvNet is trained on UCF and HMDB using multi-task learning with uni-directional optical flow stacking, enhancing video classification accuracy."</data>
+  <data key="d2">chunk-e09f3481cc62389e84f21a06f6eb3d7f&lt;SEP&gt;chunk-86f4b10d1cdb4e6ca763c0d4de0db9cd&lt;SEP&gt;chunk-eb84389e2cb0fb2dfc96d4777be87037</data>
 </node>
-<node id="&quot;ECCV&quot;">
+<node id="&quot;PROC. ECCV &quot;">
   <data key="d0">"EVENT"</data>
-  <data key="d1">"ECCV is a conference where several papers were presented on topics such as image classification and action recognition."</data>
+  <data key="d1">"Proc. ECCV is a conference proceedings where several papers were presented."</data>
   <data key="d2">chunk-640259871e7614dd8e5d3e2cd2bf19ea</data>
-</node>
-<node id="&quot;M. JAIN, H. JEGOU, AND P. BOUTHEMY&quot;">
-  <data key="d0">"PERSON"</data>
-  <data key="d1">"These individuals are the authors of a paper on better exploiting motion for action recognition."</data>
-  <data key="d2">chunk-667a0a2b5957ead16915a7cfad43c8de</data>
-</node>
-<node id="&quot;CONVNET&quot;">
-  <data key="d0">"TECHNOLOGY"</data>
-  <data key="d1">"ConvNet is a Convolutional Network, a type of neural network architecture used for image and video recognition. It is the main focus of the text."&lt;SEP&gt;"Convolutional Neural Network used in the proposed deep video classification model, focusing on both spatial and temporal recognition."</data>
-  <data key="d2">chunk-cf87ec63a4b1e44cb5a04807041bf1c1&lt;SEP&gt;chunk-86f4b10d1cdb4e6ca763c0d4de0db9cd</data>
-</node>
-<node id="&quot;N. DALAL AND B TRIGGS&quot;">
-  <data key="d0">"PERSON"</data>
-  <data key="d1">"These individuals are the authors of a paper on Histogram of Oriented Gradients for human detection."</data>
-  <data key="d2">chunk-667a0a2b5957ead16915a7cfad43c8de</data>
-</node>
-<node id="&quot;DEEP VIDEO CLASSIFICATION MODEL&quot;">
-  <data key="d0">"CATEGORY"</data>
-  <data key="d1">"A deep learning model incorporating separate spatial and temporal recognition streams for video classification."</data>
-  <data key="d2">chunk-86f4b10d1cdb4e6ca763c0d4de0db9cd</data>
-</node>
-<node id="&quot;H. JHUANG, T. SERRE, L. WOLF, AND T. POGGIO&quot;">
-  <data key="d0">"PERSON"</data>
-  <data key="d1">"These individuals are the authors of a paper on a biologically inspired system for action recognition."</data>
-  <data key="d2">chunk-667a0a2b5957ead16915a7cfad43c8de</data>
-</node>
-<node id="&quot;S. JI, W. XU, M. YANG, AND K. YU&quot;">
-  <data key="d0">"PERSON"</data>
-  <data key="d1">"These individuals are the authors of a paper on 3D convolutional neural networks for human action recognition."</data>
-  <data key="d2">chunk-667a0a2b5957ead16915a7cfad43c8de</data>
-</node>
-<node id="&quot;Y . JIA&quot;">
-  <data key="d0">"PERSON"</data>
-  <data key="d1">"This individual is the author of a paper on Caffe, an open source convolutional architecture for fast feature embedding."</data>
-  <data key="d2">chunk-667a0a2b5957ead16915a7cfad43c8de</data>
-</node>
-<node id="&quot;ACTION RECOGNITION IN VIDEOS&quot;">
-  <data key="d0">"CATEGORY"</data>
-  <data key="d1">"Action Recognition in Videos refers to the task of identifying and classifying human actions from video data, which is a key focus of the research presented."</data>
-  <data key="d2">chunk-8c67a225b7a1ed3a8ac1fd7cde9eccc1</data>
-</node>
-<node id="&quot;A. BERG, J. DENG, AND L. FEI-FEI&quot;">
-  <data key="d0">"PERSON"</data>
-  <data key="d1">"These individuals are the authors of a paper related to the ILSVRC challenge."</data>
-  <data key="d2">chunk-667a0a2b5957ead16915a7cfad43c8de</data>
-</node>
-<node id="&quot;SPORTS-1M DATASET&quot;">
-  <data key="d0">"LOCATION"</data>
-  <data key="d1">"Sports-1M dataset is a large-scale dataset containing 1.1 million YouTube videos of various sports activities used for training deep learning models."</data>
-  <data key="d2">chunk-bea5c00b3143ba4861cf69fe7d94037c</data>
-</node>
-<node id="&quot;M. A. GOODALE AND A. D. MILNER&quot;">
-  <data key="d0">"PERSON"</data>
-  <data key="d1">"These individuals are the authors of a paper on separate visual pathways for perception and action."</data>
-  <data key="d2">chunk-667a0a2b5957ead16915a7cfad43c8de</data>
-</node>
-<node id="&quot;SPATIO-TEMPORAL FEATURES&quot;">
-  <data key="d0">"TECHNOLOGY"</data>
-  <data key="d1">"Spatio-Temporal Features are local features computed over both space and time for video analysis."</data>
-  <data key="d2">chunk-8c67a225b7a1ed3a8ac1fd7cde9eccc1</data>
-</node>
-<node id="&quot;N. DALAL, B TRIGGS, AND C SCHMID&quot;">
-  <data key="d0">"PERSON"</data>
-  <data key="d1">"These individuals are the authors of a paper on human detection using oriented histograms of flow and appearance."</data>
-  <data key="d2">chunk-667a0a2b5957ead16915a7cfad43c8de</data>
 </node>
 <node id="&quot;TWO-STREAM CONVOLUTIONAL NETWORKS&quot;">
   <data key="d0">"TECHNOLOGY"</data>
-  <data key="d1">"Two-Stream Convolutional Networks is a proposed architecture for action recognition in videos, combining spatial and temporal information."</data>
+  <data key="d1">"Two-Stream Convolutional Networks is a proposed architecture for action recognition in videos, which incorporates spatial and temporal networks."</data>
   <data key="d2">chunk-8c67a225b7a1ed3a8ac1fd7cde9eccc1</data>
 </node>
-<node id="&quot;K. CRAMMER AND Y . SINGER&quot;">
-  <data key="d0">"PERSON"</data>
-  <data key="d1">"These individuals are the authors of a paper on multiclass kernel-based vector machines."</data>
-  <data key="d2">chunk-667a0a2b5957ead16915a7cfad43c8de</data>
-</node>
-<node id="&quot;SPATIO-TEMPORAL HMAX NETWORK&quot;">
-  <data key="d0">"TECHNOLOGY"</data>
-  <data key="d1">"An earlier method for spatio-temporal video classification, not performing well in the experiments."</data>
-  <data key="d2">chunk-86f4b10d1cdb4e6ca763c0d4de0db9cd</data>
-</node>
-<node id="&quot;ACTION RECOGNITION IN VIDEO DATA&quot;">
-  <data key="d0">"CATEGORY"</data>
-  <data key="d1">"Action Recognition in Video Data refers to the task of identifying and classifying human actions from video sequences, which is the main focus of this research."</data>
-  <data key="d2">chunk-8c67a225b7a1ed3a8ac1fd7cde9eccc1</data>
-</node>
-<node id="&quot;T. BROX, A. BRUHN, N. PAPENBERG, AND J. WEICKERT&quot;">
-  <data key="d0">"PERSON"</data>
-  <data key="d1">"These individuals are the authors of a paper on optical flow estimation."</data>
-  <data key="d2">chunk-667a0a2b5957ead16915a7cfad43c8de</data>
-</node>
-<node id="&quot;UNIVERSITY OF OXFORD&quot;">
-  <data key="d0">"LOCATION"</data>
-  <data key="d1">"University of Oxford is an educational institution where the research on Two-Stream Convolutional Networks takes place."</data>
-  <data key="d2">chunk-8c67a225b7a1ed3a8ac1fd7cde9eccc1</data>
-</node>
-<node id="&quot;ANDREW ZISSERMAN&quot;">
-  <data key="d0">"PERSON"</data>
-  <data key="d1">"Andrew Zisserman, also a co-author, provides significant contributions to the research and development of the Two-Stream Convolutional Networks."</data>
-  <data key="d2">chunk-8c67a225b7a1ed3a8ac1fd7cde9eccc1</data>
-</node>
-<node id="&quot;P. WEINZAEPFEL, J. REVAUD, Z. HARCHAOUI, C. SCHMID&quot;">
+<node id="&quot;CAFFE TOOLBOX&quot;">
   <data key="d0">"ORGANIZATION"</data>
-  <data key="d1">"These researchers worked on DeepFlow: Large displacement optical flow with deep matching."</data>
+  <data key="d1">"Caffe is an open-source deep learning framework developed by Berkeley AI Research (BAIR). It provides a platform for implementing and training neural networks, including ConvNets used in this text."</data>
+  <data key="d2">chunk-e09f3481cc62389e84f21a06f6eb3d7f</data>
+</node>
+<node id="&quot;NIPS &quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"NIPS (Neural Information Processing Systems) is an event where K. Simonyan et al. contributed their work."</data>
   <data key="d2">chunk-640259871e7614dd8e5d3e2cd2bf19ea</data>
 </node>
-<node id="&quot;VISUAL GEOMETRY GROUP, UNIVERSITY OF OXFORD&quot;">
-  <data key="d0">"ORGANIZATION"</data>
-  <data key="d1">"The Visual Geometry Group at the University of Oxford is an academic research group focused on visual recognition tasks."</data>
-  <data key="d2">chunk-8c67a225b7a1ed3a8ac1fd7cde9eccc1</data>
-</node>
-<node id="&quot;HMAX MODEL&quot;">
-  <data key="d0">"ARCHITECTURE"</data>
-  <data key="d1">"HMAX Model is a hand-crafted, less-deep classification model typically used in two-stream video architectures. It serves as a basis for comparison with the ConvNets described in this text."</data>
-  <data key="d2">chunk-34a54fcc59f0d516a7e1556a7de2f32b</data>
-</node>
-<node id="&quot;VISUAL GEOMETRY GROUP&quot;">
-  <data key="d0">"ORGANIZATION"</data>
-  <data key="d1">"The Visual Geometry Group at the University of Oxford is the organizational home for Karen Simonyan and Andrew Zisserman, conducting advanced visual recognition research."</data>
-  <data key="d2">chunk-8c67a225b7a1ed3a8ac1fd7cde9eccc1</data>
-</node>
-<node id="&quot;K. SIMONYAN, A. VEDALDI, AND A. ZISSERMAN&quot;">
-  <data key="d0">"PERSON"</data>
-  <data key="d1">"These individuals are the authors of a paper on deep Fisher networks for large-scale image classification."</data>
-  <data key="d2">chunk-667a0a2b5957ead16915a7cfad43c8de</data>
-</node>
-<node id="&quot;HISTOGRAM OF ORIENTED GRADIENTS (HOG)&quot;">
+<node id="&quot;SPATIAL CONVNET&quot;">
   <data key="d0">"TECHNOLOGY"</data>
-  <data key="d1">"HOG is a feature descriptor used in computer vision that captures the distribution of intensity gradients or edge directions in images."</data>
-  <data key="d2">chunk-8c67a225b7a1ed3a8ac1fd7cde9eccc1</data>
+  <data key="d1">"Spatial ConvNet is a type of Convolutional Neural Network used for spatial processing in image recognition tasks."&lt;SEP&gt;"Spatial ConvNet is another type of deep learning model, which processes spatial information from single frames in videos."&lt;SEP&gt;"The Spatial ConvNet is pre-trained on ILSVRC and its last layer is trained on UCF or HMDB, showing high accuracy in video classification."</data>
+  <data key="d2">chunk-e09f3481cc62389e84f21a06f6eb3d7f&lt;SEP&gt;chunk-86f4b10d1cdb4e6ca763c0d4de0db9cd&lt;SEP&gt;chunk-eb84389e2cb0fb2dfc96d4777be87037</data>
 </node>
-<node id="&quot;I. LAPTEV, M. MARSZAŁEK, C. SCHMID, AND B. ROZENFELD&quot;">
-  <data key="d0">"PERSON"</data>
-  <data key="d1">"These individuals are the authors of a paper on learning realistic human actions from movies."</data>
-  <data key="d2">chunk-667a0a2b5957ead16915a7cfad43c8de</data>
-</node>
-<node id="&quot;IMAGENET&quot;">
+<node id="&quot;CORR &quot;">
   <data key="d0">"ORGANIZATION"</data>
-  <data key="d1">"ImageNet is a large dataset used for pre-training still image classifiers like the spatial stream ConvNet."</data>
-  <data key="d2">chunk-bb08a015abf427870e566013b6eb1dd2</data>
+  <data key="d1">"CoRR is the venue where K. Soomro et al. published UCF101."</data>
+  <data key="d2">chunk-640259871e7614dd8e5d3e2cd2bf19ea</data>
 </node>
-<node id="&quot;A. KRIZHEVSKY, I. SUTSKEVER, AND G. E. HINTON&quot;">
-  <data key="d0">"PERSON"</data>
-  <data key="d1">"These individuals are the authors of a paper on image classification with deep convolutional neural networks."</data>
-  <data key="d2">chunk-667a0a2b5957ead16915a7cfad43c8de</data>
-</node>
-<node id="&quot;TWO-STREAM MODEL (FUSION BY AVERAGING)&quot;">
-  <data key="d0">"MODEL"</data>
-  <data key="d1">"A model combining spatial and temporal streams through averaging, achieving high accuracy."</data>
-  <data key="d2">chunk-86f4b10d1cdb4e6ca763c0d4de0db9cd</data>
-</node>
-<node id="&quot;MINI-BATCH STOCHASTIC GRADIENT DESCENT WITH MOMENTUM (SET TO 0.9)&quot;">
+<node id="&quot;OPTICAL FLOW DISPLACEMENT FIELDS D&quot;">
   <data key="d0">"CATEGORY"</data>
-  <data key="d1">"This training method uses mini-batches and momentum for optimizing network weights, set at 0.9 momentum."</data>
+  <data key="d1">"Optical flow displacement fields are used as input channels for the 96ﬁlters, capturing motion changes in images."</data>
   <data key="d2">chunk-bb08a015abf427870e566013b6eb1dd2</data>
 </node>
-<node id="&quot;K. SOOMRO, A. R&quot;">
-  <data key="d0">"PERSON"</data>
-  <data key="d1">"These individuals are the authors of a paper on HMDB: A large video database for human motion recognition."</data>
-  <data key="d2">chunk-667a0a2b5957ead16915a7cfad43c8de</data>
-</node>
-<node id="&quot;CONVNET ARCHITECTURE&quot;">
+<node id="&quot;ICML&quot;">
   <data key="d0">"ORGANIZATION"</data>
-  <data key="d1">"ConvNet architecture refers to the specific neural network setup used for both spatial and temporal streams."</data>
-  <data key="d2">chunk-bb08a015abf427870e566013b6eb1dd2</data>
-</node>
-<node id="&quot;256 SAMPLES&quot;">
-  <data key="d0">"CATEGORY"</data>
-  <data key="d1">"A mini-batch of 256 samples is constructed by randomly selecting a single frame from each of the 256 videos."</data>
-  <data key="d2">chunk-bb08a015abf427870e566013b6eb1dd2</data>
-</node>
-<node id="&quot;MAX-POOLING&quot;">
-  <data key="d0">"CATEGORY"</data>
-  <data key="d1">"Max-pooling is a downsampling technique applied over 3x3 spatial windows with stride 2, reducing dimensionality while retaining important features."</data>
-  <data key="d2">chunk-bb08a015abf427870e566013b6eb1dd2</data>
-</node>
-<node id="&quot;A. KARPATHY, G. TODERICI, S. SHETTY, T. LEUNG, R. SUKTHANKAR, AND L. FEI-FEI&quot;">
-  <data key="d0">"PERSON"</data>
-  <data key="d1">"These individuals are the authors of a paper on large-scale video classification with convolutional neural networks."</data>
+  <data key="d1">"International Conference on Machine Learning, an annual conference for machine learning research."</data>
   <data key="d2">chunk-667a0a2b5957ead16915a7cfad43c8de</data>
 </node>
-<node id="&quot;LOCAL RESPONSE NORMALIZATION&quot;">
+<node id="&quot;PROC. ICCV &quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Proc. ICCV is an event where H. Wang and colleagues presented their works on action recognition and optical flow techniques."</data>
+  <data key="d2">chunk-640259871e7614dd8e5d3e2cd2bf19ea</data>
+</node>
+<node id="&quot;96FILTERS&quot;">
   <data key="d0">"CATEGORY"</data>
-  <data key="d1">"Local Response Normalization is a normalization technique used in the network to normalize the responses of neurons within each feature map."</data>
+  <data key="d1">"96ﬁlters are convolutional filters used in a ConvNet, each with a receptive field of 7x7 pixels and spanning 20 input channels corresponding to optical flow displacement fields."</data>
   <data key="d2">chunk-bb08a015abf427870e566013b6eb1dd2</data>
 </node>
-<node id="&quot;BAG OF FEATURES (BOF)&quot;">
-  <data key="d0">"TECHNOLOGY"</data>
-  <data key="d1">"BoF is a representation technique where local features are aggregated into a histogram, often used for pattern recognition tasks."</data>
-  <data key="d2">chunk-8c67a225b7a1ed3a8ac1fd7cde9eccc1</data>
+<node id="&quot;PROC. BMVC &quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Proc. BMVC is the venue where H. Wang et al.'s work on evaluating local spatiotemporal features for action recognition was published."</data>
+  <data key="d2">chunk-640259871e7614dd8e5d3e2cd2bf19ea</data>
+</node>
+<node id="&quot;NIPS&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"Neural Information Processing Systems Conference, a leading conference for neural networks and machine learning."</data>
+  <data key="d2">chunk-667a0a2b5957ead16915a7cfad43c8de</data>
 </node>
 <node id="&quot;RELU ACTIVATION FUNCTION&quot;">
   <data key="d0">"CATEGORY"</data>
-  <data key="d1">"ReLU (Rectified Linear Unit) is an activation function used in hidden layers of the ConvNet architecture."</data>
+  <data key="d1">"ReLU (Rectified Linear Unit) is an activation function that introduces non-linearity to the ConvNet by setting all negative values to zero and keeping positive values unchanged."</data>
   <data key="d2">chunk-bb08a015abf427870e566013b6eb1dd2</data>
+</node>
+<node id="&quot;MULTI-TASK LEARNING&quot;">
+  <data key="d0">"CONCEPT"</data>
+  <data key="d1">"Multi-task Learning is a learning framework where multiple related tasks are learned simultaneously from shared inputs, increasing the amount of training data and improving performance."&lt;SEP&gt;"Multi-task learning is a technique used for training ConvNets on multiple datasets, aiming to generalize the learned representation across different tasks."&lt;SEP&gt;"Multi-task learning is used to train the ConvNets for video classification, improving performance both alone and when fused with a spatial net."</data>
+  <data key="d2">chunk-86f4b10d1cdb4e6ca763c0d4de0db9cd&lt;SEP&gt;chunk-bb08a015abf427870e566013b6eb1dd2&lt;SEP&gt;chunk-8c67a225b7a1ed3a8ac1fd7cde9eccc1</data>
+</node>
+<node id="&quot;LOCAL RESPONSE NORMALIZATION&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"Local Response Normalization (LRN) is a technique that normalizes the activity across channels locally, helping to reduce overfitting and improve generalization."</data>
+  <data key="d2">chunk-bb08a015abf427870e566013b6eb1dd2</data>
+</node>
+<node id="&quot;BMVC&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"British Machine Vision Conference, an annual conference focused on computer vision."</data>
+  <data key="d2">chunk-667a0a2b5957ead16915a7cfad43c8de</data>
+</node>
+<node id="&quot;TWO-STREAM MODEL (FUSION BY AVERAGING)&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"The Two-stream model combines Spatial and Temporal ConvNets using averaging, achieving high accuracy on UCF-101 and HMDB-51."</data>
+  <data key="d2">chunk-86f4b10d1cdb4e6ca763c0d4de0db9cd</data>
+</node>
+<node id="&quot;MAX-POOLING&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"Max-pooling is a downsampling technique in neural networks where the maximum value from a defined window of the feature map is selected, reducing spatial dimensions while retaining important information."</data>
+  <data key="d2">chunk-bb08a015abf427870e566013b6eb1dd2</data>
+</node>
+<node id="&quot;MULTI-GPU TRAINING&quot;">
+  <data key="d0">"TECHNIQUE"</data>
+  <data key="d1">"Multi-GPU training refers to the use of multiple Graphics Processing Units in parallel to speed up the training process of deep learning models."</data>
+  <data key="d2">chunk-e09f3481cc62389e84f21a06f6eb3d7f</data>
+</node>
+<node id="&quot;MINI-BATCH STOCHASTIC GRADIENT DESCENT WITH MOMENTUM&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"Mini-batch Stochastic Gradient Descent (SGD) with momentum is an optimization algorithm used for training deep neural networks, where a mix of current gradients and past gradients are used to update weights."</data>
+  <data key="d2">chunk-bb08a015abf427870e566013b6eb1dd2</data>
+</node>
+<node id="&quot;ECCV&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"European Conference on Computer Vision, a major conference in the field of computer vision."</data>
+  <data key="d2">chunk-667a0a2b5957ead16915a7cfad43c8de</data>
+</node>
+<node id="&quot;OPENCV TOOLBOX&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"OpenCV (Open Source Computer Vision Library) is an open-source computer vision and machine learning software library that provides functions for image processing and computer vision tasks. It is mentioned as providing a GPU implementation for optical flow computation."</data>
+  <data key="d2">chunk-e09f3481cc62389e84f21a06f6eb3d7f</data>
+</node>
+<node id="&quot;HMDB-51 DATASET&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"HMDB-51 dataset is another dataset used for recognizing human motion and contains 51 classes of actions, smaller than UCF-101 in terms of training set size."&lt;SEP&gt;"HMDB-51 dataset is another video benchmark with 6,800 videos and 51 action classes, often used alongside UCF-101 for comprehensive evaluation of action recognition models."&lt;SEP&gt;"HMDB-51 is a smaller video dataset with 3.7K videos, also used for training and testing the ConvNets."</data>
+  <data key="d2">chunk-e09f3481cc62389e84f21a06f6eb3d7f&lt;SEP&gt;chunk-eb84389e2cb0fb2dfc96d4777be87037&lt;SEP&gt;chunk-bb08a015abf427870e566013b6eb1dd2</data>
+</node>
+<node id="&quot;TOP-5 ERROR&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"Top-5 error is the percentage of test cases that the model fails to place in its top 5 predictions."</data>
+  <data key="d2">chunk-bb08a015abf427870e566013b6eb1dd2</data>
+</node>
+<node id="&quot;IMAGENET CHALLENGE DATASET&quot;">
+  <data key="d0">"DATASET"</data>
+  <data key="d1">"The ImageNet challenge dataset is used to pre-train the ConvNet on large-scale image classification tasks."</data>
+  <data key="d2">chunk-cf87ec63a4b1e44cb5a04807041bf1c1</data>
+</node>
+<node id="&quot;VISUAL GEOMETRY GROUP, UNIVERSITY OF OXFORD&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"The Visual Geometry Group at the University of Oxford is the institution where Karen Simonyan and Andrew Zisserman are based."</data>
+  <data key="d2">chunk-8c67a225b7a1ed3a8ac1fd7cde9eccc1</data>
+</node>
+<node id="&quot;DX AND DY COMPONENTS&quot;">
+  <data key="d0">"CONCEPT"</data>
+  <data key="d1">"The dx and dy components refer to horizontal and vertical displacements of optical flow, computed by some ﬁlters to capture how motion changes with image location."</data>
+  <data key="d2">chunk-bb08a015abf427870e566013b6eb1dd2</data>
+</node>
+<node id="&quot;TEMPORAL DERIVATIVES&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"Temporal derivatives are computed by other ﬁlters to capture changes in motion over time."</data>
+  <data key="d2">chunk-bb08a015abf427870e566013b6eb1dd2</data>
+</node>
+<node id="&quot;SINGLE-GPU TRAINING&quot;">
+  <data key="d0">"TECHNIQUE"</data>
+  <data key="d1">"Single-GPU training refers to the use of a single Graphics Processing Unit for training deep learning models. It is mentioned in comparison with multi-GPU training for speed improvements."</data>
+  <data key="d2">chunk-e09f3481cc62389e84f21a06f6eb3d7f</data>
+</node>
+<node id="&quot;SECT. 5&quot;">
+  <data key="d0">"SECTION"</data>
+  <data key="d1">"Section 5 provides details on how the spatial recognition stream of the system is built using a pre-trained ConvNet on a large dataset like ImageNet."</data>
+  <data key="d2">chunk-cf87ec63a4b1e44cb5a04807041bf1c1</data>
+</node>
+<node id="&quot;DROPOUT REGULARIZATION&quot;">
+  <data key="d0">"CONCEPT"</data>
+  <data key="d1">"Dropout regularization is a technique used in neural networks to prevent overfitting by randomly setting a fraction of input units to 0 at each update during training time, which helps in making the model more robust and generalizable."</data>
+  <data key="d2">chunk-e09f3481cc62389e84f21a06f6eb3d7f</data>
+</node>
+<node id="&quot;TEMPORAL STREAM CONVNET&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"The temporal stream ConvNet is described as an improvement over the spatial recognition stream, exploiting motion to significantly increase accuracy."</data>
+  <data key="d2">chunk-cf87ec63a4b1e44cb5a04807041bf1c1</data>
+</node>
+<node id="&quot;OPTICAL FLOW STACKING&quot;">
+  <data key="d0">"TECHNIQUE"</data>
+  <data key="d1">"Optical flow stacking is a method of forming input for the temporal recognition stream by stacking displacement vector fields between several consecutive frames."</data>
+  <data key="d2">chunk-cf87ec63a4b1e44cb5a04807041bf1c1</data>
+</node>
+<node id="&quot;SECT. 6&quot;">
+  <data key="d0">"SECTION"</data>
+  <data key="d1">"Section 6 discusses action classification from still frames, indicating it is part of a larger document or research paper."</data>
+  <data key="d2">chunk-cf87ec63a4b1e44cb5a04807041bf1c1</data>
+</node>
+<node id="&quot;STILL FRAMES&quot;">
+  <data key="d0">"DATA"</data>
+  <data key="d1">"Still frames are the input data for the spatial recognition stream, used in image classification tasks."</data>
+  <data key="d2">chunk-cf87ec63a4b1e44cb5a04807041bf1c1</data>
+</node>
+<node id="&quot;MOTION AND SIGNIFICATION IMPROVEMENT&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"The use of motion significantly improves accuracy in the temporal recognition stream."</data>
+  <data key="d2">chunk-cf87ec63a4b1e44cb5a04807041bf1c1</data>
+</node>
+<node id="&quot;OPTICAL FLOW DISPLACEMENT FIELD&quot;">
+  <data key="d0">"TECHNIQUE"</data>
+  <data key="d1">"Optical flow displacement field is a technique used to describe the movement between consecutive frames explicitly."</data>
+  <data key="d2">chunk-cf87ec63a4b1e44cb5a04807041bf1c1</data>
+</node>
+<node id="&quot;ACTION RECOGNITION&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"Action Recognition is a task of identifying human actions within videos."</data>
+  <data key="d2">chunk-8c67a225b7a1ed3a8ac1fd7cde9eccc1</data>
+</node>
+<node id="&quot;HMDB-51&quot;">
+  <data key="d0">"EVENT"</data>
+  <data key="d1">"HMDB-51 is another action recognition benchmark dataset containing 6,800 videos with 51 action classes. Like UCF-101, it is used in conjunction with UCF-101 for evaluating the performance of ConvNets."&lt;SEP&gt;"HMDB-51 is another benchmark dataset for video action recognition utilized in evaluating the proposed architecture."&lt;SEP&gt;"HMDB-51 is another dataset used alongside UCF-101 for testing and comparison of video classification methods."</data>
+  <data key="d2">chunk-e09f3481cc62389e84f21a06f6eb3d7f&lt;SEP&gt;chunk-86f4b10d1cdb4e6ca763c0d4de0db9cd&lt;SEP&gt;chunk-8c67a225b7a1ed3a8ac1fd7cde9eccc1</data>
+</node>
+<node id="&quot;MEAN FLOW SUBTRACTION&quot;">
+  <data key="d0">"TECHNIQUE"</data>
+  <data key="d1">"Mean flow subtraction is a method used to zero-center the network input for better exploitation of rectification nonlinearities."</data>
+  <data key="d2">chunk-34a54fcc59f0d516a7e1556a7de2f32b</data>
+</node>
+<node id="&quot;DISPLACEMENT FIELD D&quot;">
+  <data key="d0">"CONCEPT"</data>
+  <data key="d1">"Displacement field d refers to a vector field that describes pixel locations between frames."</data>
+  <data key="d2">chunk-34a54fcc59f0d516a7e1556a7de2f32b</data>
+</node>
+<node id="&quot;UCF-101 DATASET&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"UCF-101 dataset is a collection of videos from various categories, used to train the ConvNet on optical flow analysis."&lt;SEP&gt;"UCF-101 dataset is a large-scale video benchmark containing 13,000 videos annotated into 101 action classes, used primarily for evaluating action recognition models."&lt;SEP&gt;"UCF-101 dataset is a well-known dataset for action recognition and contains 101 different classes of actions."&lt;SEP&gt;"UCF-101 is a video dataset with 9.5K videos used for action classification in experiments."</data>
+  <data key="d2">chunk-e09f3481cc62389e84f21a06f6eb3d7f&lt;SEP&gt;chunk-34a54fcc59f0d516a7e1556a7de2f32b&lt;SEP&gt;chunk-eb84389e2cb0fb2dfc96d4777be87037&lt;SEP&gt;chunk-bb08a015abf427870e566013b6eb1dd2</data>
+</node>
+<node id="&quot;IMAGENET ILSVRC-2012&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"ImageNet ILSVRC-2012 refers to a large-scale image recognition challenge, specifically the 2012 version of ILSVRC (International Legos Visual Recognition Challenge). It is used for pre-training ConvNets and evaluating their performance."</data>
+  <data key="d2">chunk-e09f3481cc62389e84f21a06f6eb3d7f</data>
+</node>
+<node id="&quot;HIDDEN LAYERS CONFIGURATION&quot;">
+  <data key="d0">"CONCEPT"</data>
+  <data key="d1">"The hidden layers configuration refers to the architecture and setup of the convolutional neural network's internal structure."</data>
+  <data key="d2">chunk-34a54fcc59f0d516a7e1556a7de2f32b</data>
+</node>
+<node id="&quot;CONVNET ARCHITECTURES&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"ConvNet architectures refer to various configurations of Convolutional Neural Networks designed for processing visual data."</data>
+  <data key="d2">chunk-eb84389e2cb0fb2dfc96d4777be87037</data>
+</node>
+<node id="&quot;ICCV&quot;">
+  <data key="d0">"ORGANIZATION"</data>
+  <data key="d1">"International Conference on Computer Vision, another major conference in the field of computer vision."</data>
+  <data key="d2">chunk-667a0a2b5957ead16915a7cfad43c8de</data>
+</node>
+<node id="&quot;L=F5;10G&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"This represents a variable used to denote the number of stacked optical flows, ranging from 5 to 10."</data>
+  <data key="d2">chunk-eb84389e2cb0fb2dfc96d4777be87037</data>
+</node>
+<node id="&quot;SPATIO-TEMPORAL LOCAL FEATURES&quot;">
+  <data key="d0">"CATEGORY"</data>
+  <data key="d1">"Spatio-temporal local features are generalised by our temporal ConvNet, combining several spatio-temporal local features from optical flow."</data>
+  <data key="d2">chunk-34a54fcc59f0d516a7e1556a7de2f32b</data>
+</node>
+<node id="&quot;STACKED OPTICAL FLOWS&quot;">
+  <data key="d0">"TECHNOLOGY"</data>
+  <data key="d1">"This refers to multiple layers of optical flow data used as input for the ConvNet architectures."</data>
+  <data key="d2">chunk-eb84389e2cb0fb2dfc96d4777be87037</data>
+</node>
+<node id="&quot;TRAJECTORY STACKING&quot;">
+  <data key="d0">"TECHNIQUE"</data>
+  <data key="d1">"A technique mentioned in the text where trajectories are stacked as part of the input configuration."&lt;SEP&gt;"Trajectory stacking is an alternative motion representation that samples optical flow along motion trajectories, providing a different way to encode motion in ConvNet inputs."</data>
+  <data key="d2">chunk-eb84389e2cb0fb2dfc96d4777be87037&lt;SEP&gt;chunk-cf87ec63a4b1e44cb5a04807041bf1c1</data>
 </node>
 <node id="&quot;MEAN DISPLACEMENT SUBTRACTION&quot;">
   <data key="d0">"TECHNOLOGY"</data>
-  <data key="d1">"Mean displacement subtraction is a preprocessing step applied to optical flow fields to reduce global motion effects."</data>
+  <data key="d1">"This is a preprocessing step that subtracts the mean displacement from the optical flow data, used to reduce global motion effects."</data>
   <data key="d2">chunk-eb84389e2cb0fb2dfc96d4777be87037</data>
 </node>
 <node id="&quot;BI-DIRECTIONAL OPTICAL FLOW&quot;">
-  <data key="d0">"TECHNOLOGY"</data>
-  <data key="d1">"Bi-directional optical flow is a technique used in ConvNet architectures to process video data."</data>
+  <data key="d0">"TECHNIQUE"</data>
+  <data key="d1">"A method of generating optical flow that considers both forward and backward motion in the video frames."&lt;SEP&gt;"Bi-directional optical flow refers to computing displacement fields both forward and backward between frames, enhancing the network's ability to understand motion in videos."</data>
+  <data key="d2">chunk-eb84389e2cb0fb2dfc96d4777be87037&lt;SEP&gt;chunk-cf87ec63a4b1e44cb5a04807041bf1c1</data>
+</node>
+<node id="&quot;OPTICAL FLOW&quot;">
+  <data key="d0">"CONCEPT"</data>
+  <data key="d1">"Optical flow refers to a displacement field that describes the motion of pixels between frames."</data>
+  <data key="d2">chunk-34a54fcc59f0d516a7e1556a7de2f32b</data>
+</node>
+<node id="&quot;SPATIAL RECOGNITION STREAM&quot;">
+  <data key="d2">chunk-cf87ec63a4b1e44cb5a04807041bf1c1</data>
+  <data key="d1">"The temporal stream ConvNet improves upon the spatial recognition stream by exploiting motion to enhance accuracy."</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<node id="&quot;H. WANG, R. FERGUS, C. SCHMID&quot;">
+  <data key="d2">chunk-640259871e7614dd8e5d3e2cd2bf19ea</data>
+  <data key="d1">"H. Wang and colleagues' work on action recognition with improved trajectories and DeepFlow was presented at Proc. ICCV."</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<node id="&quot;TRAINING PROCEDURE&quot;">
+  <data key="d2">chunk-bb08a015abf427870e566013b6eb1dd2</data>
+  <data key="d1">"Mini-batch SGD with momentum is used for the training procedure of the ConvNet to update weights and improve convergence."</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<node id="&quot;H. WANG, A. KLÄSER, C. SCHMID, C.-L. LIU&quot;">
+  <data key="d2">chunk-640259871e7614dd8e5d3e2cd2bf19ea</data>
+  <data key="d1">"Their work on 'Action recognition by dense trajectories' was presented at Proc. CVPR."</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<node id="&quot;ALEX&quot;">
   <data key="d2">chunk-eb84389e2cb0fb2dfc96d4777be87037</data>
+  <data key="d1">"Alex's team assesses the effect of using multiple stacked optical flows."</data>
+  <data key="d0">"UNKNOWN"</data>
 </node>
-<node id="&quot;PROC. ICCV &quot;">
+<node id="&quot;ACTION CLASSIFICATION&quot;">
+  <data key="d2">chunk-cf87ec63a4b1e44cb5a04807041bf1c1</data>
+  <data key="d1">"The temporal stream ConvNet plays a crucial role in action classification by exploiting motion to improve accuracy."</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<node id="&quot;TESTING&quot;">
+  <data key="d2">chunk-bb08a015abf427870e566013b6eb1dd2</data>
+  <data key="d1">"Top-5 error is evaluated during testing to assess the performance of the ConvNet model."</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<node id="&quot;RESEARCH&quot;">
   <data key="d2">chunk-667a0a2b5957ead16915a7cfad43c8de</data>
-  <data key="d1">"Their work was published in Proceedings of the International Conference on Computer Vision (ICCV), indicating their contribution to computer vision research."&lt;SEP&gt;"Their work was published in Proceedings of the International Conference on Computer Vision (ICCV), indicating their contribution to computer vision research." &lt;|"publication, research contribution"</data>
+  <data key="d1">"GPUs are donated for use in the research, indicating their importance and role in advancing the project."</data>
   <data key="d0">"UNKNOWN"</data>
 </node>
-<node id="&quot;PROC. CVPR &quot;">
-  <data key="d2">chunk-667a0a2b5957ead16915a7cfad43c8de</data>
-  <data key="d1">"Their work was published in Proceedings of the Conference on Computer Vision and Pattern Recognition (CVPR), indicating their contribution to computer vision research."&lt;SEP&gt;"Their work was published in Proceedings of the Conference on Computer Vision and Pattern Recognition (CVPR), indicating their contribution to computer vision research." &lt;|"publication, research contribution"</data>
-  <data key="d0">"UNKNOWN"</data>
-</node>
-<node id="&quot;MBH&quot;">
-  <data key="d2">chunk-34a54fcc59f0d516a7e1556a7de2f32b</data>
-  <data key="d1">"MBH generalizes HOF by incorporating block structures into the histogram computation, also derived from optical flow. This relationship indicates the evolution and complexity in feature extraction techniques."</data>
-  <data key="d0">"UNKNOWN"</data>
-</node>
-<node id="&quot;PROC. ECCV &quot;">
-  <data key="d2">chunk-667a0a2b5957ead16915a7cfad43c8de</data>
-  <data key="d1">"Their work was published in Proceedings of the European Conference on Computer Vision (ECCV), indicating their contribution to computer vision research."&lt;SEP&gt;"Their work was published in Proceedings of the European Conference on Computer Vision (ECCV), indicating their contribution to computer vision research." &lt;|"publication, research contribution"</data>
-  <data key="d0">"UNKNOWN"</data>
-</node>
-<node id="&quot;PROC. BMVC &quot;">
-  <data key="d2">chunk-667a0a2b5957ead16915a7cfad43c8de</data>
-  <data key="d1">"Their work was published in Proceedings of the British Machine Vision Conference (BMVC), indicating their contribution to machine vision research."&lt;SEP&gt;"Their work was published in Proceedings of the British Machine Vision Conference (BMVC), indicating their contribution to machine vision research." &lt;|"publication, research contribution"</data>
-  <data key="d0">"UNKNOWN"</data>
-</node>
-<node id="&quot;EVALUATION OF LOCAL SPATIO-TEMPORAL FEATURES FOR ACTION RECOGNITION&quot;">
+<node id="&quot;G. W. TAYLOR, R. FERGUS, Y. LECUN, C. BREGLER, P. WEINZAEPFEL, J. REVAUD, Z. HARCHAOUI, C. SCHMID&quot;">
   <data key="d2">chunk-640259871e7614dd8e5d3e2cd2bf19ea</data>
-  <data key="d1">"H. Wang and his team have evaluated local spatio-temporal features in their research."</data>
+  <data key="d1">"H. Wang et al.'s work builds on the foundational research by G. W. Taylor and colleagues in convolutional learning and action recognition techniques."</data>
   <data key="d0">"UNKNOWN"</data>
 </node>
-<node id="&quot;NIPS DEEP LEARNING AND UNSUPERVISED FEATURE LEARNING WORKSHOP &quot;">
-  <data key="d2">chunk-667a0a2b5957ead16915a7cfad43c8de</data>
-  <data key="d1">"Their work was published in a workshop focused on deep learning and unsupervised feature learning, highlighting their expertise in this field."&lt;SEP&gt;"Their work was published in a workshop focused on deep learning and unsupervised feature learning, highlighting their expertise in this field." &lt;|"publication, research contribution"</data>
+<node id="&quot;TECHNIQUE&quot;">
+  <data key="d2">chunk-eb84389e2cb0fb2dfc96d4777be87037</data>
+  <data key="d1">"Multi-task learning involves training a single model on multiple related tasks, enhancing its generalization and performance on both datasets."</data>
   <data key="d0">"UNKNOWN"</data>
 </node>
-<node id="&quot;PROC. ICML &quot;">
-  <data key="d2">chunk-667a0a2b5957ead16915a7cfad43c8de</data>
-  <data key="d1">"Their work was published in Proceedings of the International Conference on Machine Learning (ICML), indicating their contribution to machine learning research."&lt;SEP&gt;"Their work was published in Proceedings of the International Conference on Machine Learning (ICML), indicating their contribution to machine learning research." &lt;|"publication, research contribution"</data>
+<node id="&quot;OPTICAL FLOW COMPUTATION&quot;">
+  <data key="d2">chunk-e09f3481cc62389e84f21a06f6eb3d7f</data>
+  <data key="d1">"The off-the-shelf GPU implementation of optical flow from OpenCV is used for pre-computed optical flow in the experiments. "</data>
   <data key="d0">"UNKNOWN"</data>
 </node>
-<node id="&quot;ACTION RECOGNITION WITH IMPROVED TRAJECTORIES, DEEPFLOW: LARGE DISPLACEMENT OPTICAL FLOW WITH DEEP MATCHING&quot;">
+<node id="&quot;TWO-STREAM MODEL&quot;">
+  <data key="d2">chunk-86f4b10d1cdb4e6ca763c0d4de0db9cd</data>
+  <data key="d1">"The Two-stream model is evaluated on UCF-101 dataset, showing high accuracy and outperforming other methods."</data>
+  <data key="d0">"UNKNOWN"</data>
+</node>
+<node id="&quot;G. W. TAYLOR, R. FERGUS, Y . LECUN, C. BREGLER, P. WEINZAEPFEL, J. REVAUD, Z. HARCHAOUI, C. SCHMID&quot;">
   <data key="d2">chunk-640259871e7614dd8e5d3e2cd2bf19ea</data>
-  <data key="d1">"These researchers have contributed to the development and presentation of both techniques."</data>
+  <data key="d1">"H. Wang et al.'s work builds on the foundational research by G. W. Taylor and colleagues in convolutional learning and action recognition techniques."</data>
   <data key="d0">"UNKNOWN"</data>
 </node>
-<node id="&quot;TRENDS IN NEUROSCIENCES &quot;">
-  <data key="d2">chunk-667a0a2b5957ead16915a7cfad43c8de</data>
-  <data key="d1">"Their work was published in Trends in Neurosciences, indicating their contribution to neuroscience research."&lt;SEP&gt;"Their work was published in Trends in Neurosciences, indicating their contribution to neuroscience research." &lt;|"publication, research contribution"</data>
+<node id="&quot;SPATIO-TEMPORAL CONVNET&quot;">
+  <data key="d2">chunk-86f4b10d1cdb4e6ca763c0d4de0db9cd</data>
+  <data key="d1">"Multi-task learning is applied to the Temporal ConvNet, enhancing its effectiveness for optical flow-based input."</data>
   <data key="d0">"UNKNOWN"</data>
 </node>
-<node id="&quot;HIDDEN LAYERS&quot;">
-  <data key="d2">chunk-bb08a015abf427870e566013b6eb1dd2</data>
-  <data key="d1">"ReLU activation functions are used in hidden layers of the ConvNet to introduce non-linearity and improve model performance."</data>
-  <data key="d0">"UNKNOWN"</data>
-</node>
-<node id="&quot;DIMENSIONALITY REDUCTION&quot;">
-  <data key="d2">chunk-bb08a015abf427870e566013b6eb1dd2</data>
-  <data key="d1">"Max-pooling reduces dimensionality while retaining important features, a key step in the ConvNet architecture."</data>
-  <data key="d0">"UNKNOWN"</data>
-</node>
-<node id="&quot;NIPS &quot;">
-  <data key="d2">chunk-667a0a2b5957ead16915a7cfad43c8de</data>
-  <data key="d1">"Their work was published in NIPS (Neural Information Processing Systems), indicating their contribution to machine learning research."&lt;SEP&gt;"Their work was published in NIPS (Neural Information Processing Systems), indicating their contribution to machine learning research." &lt;|"publication, research contribution"</data>
-  <data key="d0">"UNKNOWN"</data>
-</node>
-<node id="&quot;IEEE PAMI &quot;">
-  <data key="d2">chunk-667a0a2b5957ead16915a7cfad43c8de</data>
-  <data key="d1">"Their work was published in IEEE Transactions on Pattern Analysis and Machine Intelligence (PAMI), indicating their contribution to machine learning research."&lt;SEP&gt;"Their work was published in IEEE Transactions on Pattern Analysis and Machine Intelligence (PAMI), indicating their contribution to machine learning research." &lt;|"publication, research contribution"</data>
-  <data key="d0">"UNKNOWN"</data>
-</node>
-<node id="&quot;HOF&quot;">
-  <data key="d2">chunk-34a54fcc59f0d516a7e1556a7de2f32b</data>
-  <data key="d1">"HOF is derived from the optical flow by computing histograms of orientations, which are then used as descriptors for feature extraction. This relationship shows the origin and usage of HOF within the context of Optical Flow."</data>
-  <data key="d0">"UNKNOWN"</data>
-</node>
-<node id="&quot;LARGE SCALE VISUAL RECOGNITION CHALLENGE (ILSVRC)&quot;">
-  <data key="d2">chunk-667a0a2b5957ead16915a7cfad43c8de</data>
-  <data key="d1">"The authors were involved in organizing or participating in the ILSVRC challenge."&lt;SEP&gt;"The authors were involved in organizing or participating in the ILSVRC challenge." &lt;|"research contribution, challenge organization"</data>
-  <data key="d0">"UNKNOWN"</data>
-</node>
-<node id="&quot;JMLR &quot;">
-  <data key="d2">chunk-667a0a2b5957ead16915a7cfad43c8de</data>
-  <data key="d1">"Their work was published in Journal of Machine Learning Research (JMLR), indicating their contribution to machine learning research."&lt;SEP&gt;"Their work was published in Journal of Machine Learning Research (JMLR), indicating their contribution to machine learning research." &lt;|"publication, research contribution"</data>
-  <data key="d0">"UNKNOWN"</data>
-</node>
-<node id="&quot;TRAINING INPUT&quot;">
-  <data key="d2">chunk-bb08a015abf427870e566013b6eb1dd2</data>
-  <data key="d1">"Video frames are used as input for training ConvNet models, crucial for learning temporal dynamics in video classification tasks."</data>
-  <data key="d0">"UNKNOWN"</data>
-</node>
-<node id="&quot;DATA AUGMENTATION&quot;">
-  <data key="d2">chunk-bb08a015abf427870e566013b6eb1dd2</data>
-  <data key="d1">"A 224x224 sub-image is randomly cropped from the frame as part of the data augmentation process during spatial net training."</data>
-  <data key="d0">"UNKNOWN"</data>
-</node>
-<node id="&quot;VIDEO ANALYSIS&quot;">
-  <data key="d2">chunk-bb08a015abf427870e566013b6eb1dd2</data>
-  <data key="d1">"Testing involves sampling frames from a video to analyze and predict outcomes using ConvNet models."</data>
-  <data key="d0">"UNKNOWN"</data>
-</node>
-<node id="&quot;TEMPORAL CONVNET INPUT&quot;">
-  <data key="d2">chunk-bb08a015abf427870e566013b6eb1dd2</data>
-  <data key="d1">"Optical flow volume I provides temporal information used in the temporal ConvNet for tracking motion over time."</data>
-  <data key="d0">"UNKNOWN"</data>
-</node>
-<node id="&quot;OPTICAL FLOW VOLUME CROPPING&quot;">
-  <data key="d2">chunk-bb08a015abf427870e566013b6eb1dd2</data>
-  <data key="d1">"A 224x224x2L input is randomly cropped from the optical flow volume for use in temporal net training."</data>
-  <data key="d0">"UNKNOWN"</data>
-</node>
-<node id="&quot;CONVNET PRE-TRAINING&quot;">
-  <data key="d2">chunk-bb08a015abf427870e566013b6eb1dd2</data>
-  <data key="d1">"The same data augmentation techniques used in ImageNet training are applied to pre-train the spatial ConvNet, improving its generalization ability."</data>
-  <data key="d0">"UNKNOWN"</data>
-</node>
-<node id="&quot;PERFORMANCE INDICATOR&quot;">
-  <data key="d2">chunk-bb08a015abf427870e566013b6eb1dd2</data>
-  <data key="d1">"The top-5 error rate of 13.5% on the ILSVRC-2012 validation set serves as a performance indicator for the ConvNet model."</data>
-  <data key="d0">"UNKNOWN"</data>
-</node>
-<node id="&quot;HTTP://CAFFE.BERKELEYVISION.ORG/ &quot;">
-  <data key="d2">chunk-667a0a2b5957ead16915a7cfad43c8de</data>
-  <data key="d1">"Their work was published on their website, indicating their contribution to computer vision research and software development."&lt;SEP&gt;"Their work was published on their website, indicating their contribution to computer vision research and software development." &lt;|"publication, software development"</data>
-  <data key="d0">"UNKNOWN"</data>
-</node>
-<node id="&quot;FEATURE MAP NORMALIZATION&quot;">
-  <data key="d2">chunk-bb08a015abf427870e566013b6eb1dd2</data>
-  <data key="d1">"Local Response Normalization is applied within each feature map to normalize and improve the network's performance."</data>
-  <data key="d0">"UNKNOWN"</data>
-</node>
-<node id="&quot;F. PERRONNIN, J. SÁNCHEZ, T. MENSINK, K. SIMONYAN, A. VEDALDI, A. ZISSERMAN, G. W. TAYLOR, R. FERGUS, Y. LECUN, C. BREGLER, H. WANG, M. M. ULLAH, A. KLÄSER, I. LAPTEV, P. WEINZAEPFEL, J. REVAUD, Z. HARCHAOUI&quot;">
-  <data key="d2">chunk-640259871e7614dd8e5d3e2cd2bf19ea</data>
-  <data key="d1">"Multiple researchers and their collaborators have contributed to the papers presented at ECCV."</data>
-  <data key="d0">"UNKNOWN"</data>
-</node>
-<node id="&quot;EVENT&quot;">
-  <data key="d2">chunk-640259871e7614dd8e5d3e2cd2bf19ea</data>
-  <data key="d1">"All these researchers and their collaborators have presented papers at various events such as ECCV."</data>
-  <data key="d0">"UNKNOWN"</data>
-</node>
-<node id="&quot;G. W. TAYLOR, R. FERGUS, Y. LECUN, C. BREGLER, H. WANG, M. M. ULLAH, A. KLÄSER, I. LAPTEV, P. WEINZAEPFEL, J. REVAUD, Z. HARCHAOUI, C. SCHMID&quot;">
-  <data key="d2">chunk-640259871e7614dd8e5d3e2cd2bf19ea</data>
-  <data key="d1">"All these researchers and their collaborators have presented papers at various events such as ECCV."</data>
-  <data key="d0">"UNKNOWN"</data>
-</node>
-<node id="&quot;ECCV, ICCV WORKSHOP ON ACTION RECOGNITION WITH A LARGE NUMBER OF CLASSES, PROC. BMVC, PROC. CVPR, PROC. ECCV, PROC. ICCV, PROC. NIPS, ICCV WORKSHOP&quot;">
-  <data key="d2">chunk-640259871e7614dd8e5d3e2cd2bf19ea</data>
-  <data key="d1">"conference participation, research community"</data>
-  <data key="d0">"UNKNOWN"</data>
-</node>
-<node id="&quot;M. D. ZEILER, R. FERGUS, C. BREGLER, G. W. TAYLOR, H. WANG, P. WEINZAEPFEL, J. REVAUD, Z. HARCHAOUI&quot;">
-  <data key="d2">chunk-640259871e7614dd8e5d3e2cd2bf19ea</data>
-  <data key="d1">"conference participation, research community"</data>
-  <data key="d0">"UNKNOWN"</data>
-</node>
-<node id="&quot;DEEPFLOW: LARGE DISPLACEMENT OPTICAL FLOW WITH DEEP MATCHING&quot;">
-  <data key="d2">chunk-640259871e7614dd8e5d3e2cd2bf19ea</data>
-  <data key="d1">"The researchers have contributed to the development and presentation of DeepFlow."</data>
-  <data key="d0">"UNKNOWN"</data>
-</node>
-<edge source="&quot;AGGRESSIVE DROPOUT RATIO OF 0.9&quot;" target="&quot;TEMPORAL CONVNET&quot;">
-  <data key="d3">14.0</data>
-  <data key="d4">"An aggressive dropout ratio of 0.9 is used during training to help improve generalization in Temporal ConvNets."</data>
-  <data key="d5">&lt;"training strategy, generalization improvement"</data>
-  <data key="d6">chunk-eb84389e2cb0fb2dfc96d4777be87037</data>
-</edge>
-<edge source="&quot;UCF-101 AND HMDB-51 DATASETS&quot;" target="&quot;MULTI-TASK LEARNING&quot;">
-  <data key="d3">9.0</data>
-  <data key="d4">"The UCF-101 and HMDB-51 datasets are used in a multi-task learning setup to train the ConvNet on video action classification tasks."</data>
-  <data key="d5">"data utilization, task generalization"</data>
-  <data key="d6">chunk-bb08a015abf427870e566013b6eb1dd2</data>
-</edge>
-<edge source="&quot;PRE-TRAINED + LAST LAYER UNI-DIRECTIONAL AVERAGING&quot;" target="&quot;TWO-STREAM MODEL (FUSION BY AVERAGING)&quot;">
+<edge source="&quot;KAREN SIMONYAN&quot;" target="&quot;VISUAL GEOMETRY GROUP, UNIVERSITY OF OXFORD&quot;">
   <data key="d3">7.0</data>
-  <data key="d4">"Uni-directional averaging in the pre-training process contributed to the accuracy of the two-stream model."</data>
-  <data key="d5">"model component, technique inclusion"</data>
-  <data key="d6">chunk-86f4b10d1cdb4e6ca763c0d4de0db9cd</data>
-</edge>
-<edge source="&quot;OPTICAL FLOW VOLUME I&quot;" target="&quot;TEMPORAL CONVNET INPUT&quot;">
-  <data key="d3">7.0</data>
-  <data key="d4">"Optical flow volume I provides temporal information used in the temporal ConvNet for tracking motion over time."</data>
-  <data key="d5">"motion tracking, temporal data"</data>
-  <data key="d6">chunk-bb08a015abf427870e566013b6eb1dd2</data>
-</edge>
-<edge source="&quot;HMDB-51&quot;" target="&quot;TWO-STREAM CONVOLUTIONAL NETWORKS&quot;">
-  <data key="d3">8.0</data>
-  <data key="d4">"Similar to UCF-101, the Two-Stream Convolutional Networks is also evaluated on HMDB-51 for performance and generalizability."</data>
-  <data key="d5">"performance evaluation, benchmarking"</data>
+  <data key="d4">"Karen Simonyan works with the Visual Geometry Group at the University of Oxford."</data>
+  <data key="d5">"affiliation, research collaboration"</data>
   <data key="d6">chunk-8c67a225b7a1ed3a8ac1fd7cde9eccc1</data>
 </edge>
-<edge source="&quot;HMDB-51&quot;" target="&quot;MULTI-TASK LEARNING&quot;">
-  <data key="d3">14.0</data>
-  <data key="d4">"Multi-task Learning is applied to train models on HMDB-51 and UCF-101, showing its importance for expanding the training set size."</data>
-  <data key="d5">&lt;"increased effectiveness through shared learning"</data>
-  <data key="d6">chunk-eb84389e2cb0fb2dfc96d4777be87037</data>
-</edge>
-<edge source="&quot;224X224X2L INPUT&quot;" target="&quot;OPTICAL FLOW VOLUME CROPPING&quot;">
+<edge source="&quot;ANDREW ZISSERMAN&quot;" target="&quot;VISUAL GEOMETRY GROUP, UNIVERSITY OF OXFORD&quot;">
   <data key="d3">6.0</data>
-  <data key="d4">"A 224x224x2L input is randomly cropped from the optical flow volume for use in temporal net training."</data>
-  <data key="d5">"cropping technique, data preparation"</data>
-  <data key="d6">chunk-bb08a015abf427870e566013b6eb1dd2</data>
-</edge>
-<edge source="&quot;VIDEO FRAMES&quot;" target="&quot;TRAINING INPUT&quot;">
-  <data key="d3">9.0</data>
-  <data key="d4">"Video frames are used as input for training ConvNet models, crucial for learning temporal dynamics in video classification tasks."</data>
-  <data key="d5">"input data, model training"</data>
-  <data key="d6">chunk-bb08a015abf427870e566013b6eb1dd2</data>
-</edge>
-<edge source="&quot;PRE-TRAINED + LAST LAYER BI-DIRECTIONAL AVERAGING&quot;" target="&quot;TWO-STREAM MODEL (FUSION BY AVERAGING)&quot;">
-  <data key="d3">7.0</data>
-  <data key="d4">"The pre-training technique with bi-directional averaging was part of the two-stream model's approach."</data>
-  <data key="d5">"model component, technique inclusion"</data>
-  <data key="d6">chunk-86f4b10d1cdb4e6ca763c0d4de0db9cd</data>
-</edge>
-<edge source="&quot;TESTING FRAMES&quot;" target="&quot;VIDEO ANALYSIS&quot;">
-  <data key="d3">8.0</data>
-  <data key="d4">"Testing involves sampling frames from a video to analyze and predict outcomes using ConvNet models."</data>
-  <data key="d5">"frame sampling, prediction analysis"</data>
-  <data key="d6">chunk-bb08a015abf427870e566013b6eb1dd2</data>
-</edge>
-<edge source="&quot;SPATIAL CONVNET&quot;" target="&quot;UCF-101&quot;">
-  <data key="d3">12.0</data>
-  <data key="d4">"The Spatial ConvNets are compared against Temporal ConvNets on UCF-101, indicating their usage with this dataset."</data>
-  <data key="d5">"comparative analysis, dataset usage"&lt;SEP&gt;&lt;"comparative analysis, dataset usage"</data>
-  <data key="d6">chunk-eb84389e2cb0fb2dfc96d4777be87037</data>
-</edge>
-<edge source="&quot;TOP-5 ERROR 13.5% ON ILSVRC-2012 VALIDATION SET&quot;" target="&quot;PERFORMANCE INDICATOR&quot;">
-  <data key="d3">9.0</data>
-  <data key="d4">"The top-5 error rate of 13.5% on the ILSVRC-2012 validation set serves as a performance indicator for the ConvNet model."</data>
-  <data key="d5">"validation, performance metric"</data>
-  <data key="d6">chunk-bb08a015abf427870e566013b6eb1dd2</data>
-</edge>
-<edge source="&quot;256 SUB-IMAGE&quot;" target="&quot;DATA AUGMENTATION&quot;">
-  <data key="d3">8.0</data>
-  <data key="d4">"A 224x224 sub-image is randomly cropped from the frame as part of the data augmentation process during spatial net training."</data>
-  <data key="d5">"image sampling, augmentation technique"</data>
-  <data key="d6">chunk-bb08a015abf427870e566013b6eb1dd2</data>
-</edge>
-<edge source="&quot;MULTI-TASK LEARNING&quot;" target="&quot;TEMPORAL CONVNET&quot;">
-  <data key="d3">8.0</data>
-  <data key="d4">"Multi-task learning was used to train both the spatial and temporal ConvNets."</data>
-  <data key="d5">"training method, improvement"</data>
-  <data key="d6">chunk-86f4b10d1cdb4e6ca763c0d4de0db9cd</data>
-</edge>
-<edge source="&quot;MULTI-TASK LEARNING&quot;" target="&quot;96FILTERS&quot;">
-  <data key="d3">8.0</data>
-  <data key="d4">"The 96 ﬁlters are used in a multi-task learning setup, where different filters compute spatial and temporal derivatives for various tasks."</data>
-  <data key="d5">"task adaptation, derivative computation"</data>
-  <data key="d6">chunk-bb08a015abf427870e566013b6eb1dd2</data>
-</edge>
-<edge source="&quot;STACKING TECHNIQUES&quot;" target="&quot;TEMPORAL CONVNET&quot;">
-  <data key="d3">8.0</data>
-  <data key="d4">"The stacking techniques such as multiple displacement fields and mean subtraction are beneficial for the performance of Temporal ConvNets."</data>
-  <data key="d5">&lt;"technique effectiveness, improvement in accuracy"</data>
-  <data key="d6">chunk-eb84389e2cb0fb2dfc96d4777be87037</data>
-</edge>
-<edge source="&quot;SLOW FUSION ARCHITECTURE&quot;" target="&quot;TEMPORAL CONVNET&quot;">
-  <data key="d3">7.0</data>
-  <data key="d4">"The Temporal ConvNet performs the best when fused with a spatial net using slow fusion architecture, showing its effectiveness in multi-modal recognition tasks."</data>
-  <data key="d5">&lt;"fusion methods, performance comparison"</data>
-  <data key="d6">chunk-eb84389e2cb0fb2dfc96d4777be87037</data>
-</edge>
-<edge source="&quot;DONATION OF GPUS&quot;" target="&quot;LARGE SCALE VISUAL RECOGNITION CHALLENGE (ILSVRC)&quot;">
-  <data key="d3">6.0</data>
-  <data key="d4">"The donation could be related to the ILSVRC, possibly providing computational resources for their research."</data>
-  <data key="d5">"resource allocation, support"</data>
-  <data key="d6">chunk-667a0a2b5957ead16915a7cfad43c8de</data>
-</edge>
-<edge source="&quot;FISHER VECTOR ENCODING&quot;" target="&quot;UCF-101 DATASET&quot;">
-  <data key="d3">6.0</data>
-  <data key="d4">"The Fisher vector encoding technique has been applied to the UCF-101 dataset for action classification tasks."</data>
-  <data key="d5">"dataset application, recognition accuracy"</data>
-  <data key="d6">chunk-bea5c00b3143ba4861cf69fe7d94037c</data>
-</edge>
-<edge source="&quot;FISHER VECTOR ENCODING&quot;" target="&quot;MOTION BOUNDARY HISTOGRAM (MBH)&quot;">
-  <data key="d3">8.0</data>
-  <data key="d4">"Both techniques are part of recent improvements in trajectory-based hand-crafted representations, though Fisher vector uses a different encoding method."</data>
-  <data key="d5">"technique evolution, improvement"</data>
-  <data key="d6">chunk-bea5c00b3143ba4861cf69fe7d94037c</data>
-</edge>
-<edge source="&quot;FUSION METHOD&quot;" target="&quot;TWO-STREAM MODEL (FUSION BY AVERAGING)&quot;">
-  <data key="d3">8.0</data>
-  <data key="d4">"Averaging was used as a fusion method in the two-stream model to combine spatial and temporal streams."</data>
-  <data key="d5">"fused model, technique usage"</data>
-  <data key="d6">chunk-86f4b10d1cdb4e6ca763c0d4de0db9cd</data>
-</edge>
-<edge source="&quot;FUSION METHOD&quot;" target="&quot;TWO-STREAM MODEL (FUSION BY SVM)&quot;">
-  <data key="d3">8.0</data>
-  <data key="d4">"SVM was used for fusion in the two-stream model alongside the averaging method."</data>
-  <data key="d5">"fused model, technique usage"</data>
-  <data key="d6">chunk-86f4b10d1cdb4e6ca763c0d4de0db9cd</data>
-</edge>
-<edge source="&quot;HAND-CRAFTED REPRESENTATION&quot;" target="&quot;HMAX ARCHITECTURE&quot;">
-  <data key="d3">7.0</data>
-  <data key="d4">"Hand-crafted representations are contrasted with the HMAX architecture, which is a more structured approach in video recognition streams." "</data>
-  <data key="d5">"methodology comparison, structure vs. handcrafting"</data>
-  <data key="d6">chunk-bea5c00b3143ba4861cf69fe7d94037c</data>
-</edge>
-<edge source="&quot;KINEMATIC FEATURES&quot;" target="&quot;TEMPORAL CONVNET ARCHITECTURE&quot;">
-  <data key="d3">6.0</data>
-  <data key="d4">"Kinematic features such as divergence, curl, and shear are captured by the Temporal ConvNet using its convolutional model. This relationship shows how these features are processed within the network."</data>
-  <data key="d5">"feature capture, processing"</data>
-  <data key="d6">chunk-34a54fcc59f0d516a7e1556a7de2f32b</data>
-</edge>
-<edge source="&quot;HMAX ARCHITECTURE&quot;" target="&quot;SPORTS-1M DATASET&quot;">
-  <data key="d3">5.0</data>
-  <data key="d4">"Although not directly used on Sports-1M, HMAX architectures can provide foundational knowledge that might influence the design of models trained on such large datasets." "</data>
-  <data key="d5">"architectural inspiration, scalability"</data>
-  <data key="d6">chunk-bea5c00b3143ba4861cf69fe7d94037c</data>
-</edge>
-<edge source="&quot;TRAJECTORY FEATURE&quot;" target="&quot;TEMPORAL CONVNET ARCHITECTURE&quot;">
-  <data key="d3">7.0</data>
-  <data key="d4">"The Trajectory feature is computed by stacking displacement vectors along a trajectory path and can be represented using the Temporal ConvNet's architecture. This relationship highlights the network's ability to handle such complex motion patterns."</data>
-  <data key="d5">"feature representation, processing"</data>
-  <data key="d6">chunk-34a54fcc59f0d516a7e1556a7de2f32b</data>
-</edge>
-<edge source="&quot;UCF-101 DATASET&quot;" target="&quot;CONVNET&quot;">
-  <data key="d3">9.0</data>
-  <data key="d4">"The UCF-101 dataset is used for training and testing ConvNets to evaluate their performance on action recognition tasks. This relationship underscores the role of datasets in validating model efficacy."</data>
-  <data key="d5">"training-validation, action recognition"</data>
-  <data key="d6">chunk-34a54fcc59f0d516a7e1556a7de2f32b</data>
-</edge>
-<edge source="&quot;KAREN SIMONYAN&quot;" target="&quot;VISUAL GEOMETRY GROUP&quot;">
-  <data key="d3">9.0</data>
-  <data key="d4">"Karen Simonyan works as a member of the Visual Geometry Group at the University of Oxford."</data>
-  <data key="d5">"research collaboration, affiliation"</data>
+  <data key="d4">"Andrew Zisserman is part of the Visual Geometry Group at the University of Oxford."</data>
+  <data key="d5">"affiliation, research collaboration"</data>
   <data key="d6">chunk-8c67a225b7a1ed3a8ac1fd7cde9eccc1</data>
 </edge>
-<edge source="&quot;SPATIO-TEMPORAL LOCAL FEATURES&quot;" target="&quot;TEMPORAL CONVNET ARCHITECTURE&quot;">
-  <data key="d3">7.0</data>
-  <data key="d4">"The Temporal ConvNet can generalize spatio-temporal local features like HOF and MBH through its convolutional layers, which process multiple optical flows."</data>
-  <data key="d5">"generalization, feature processing"</data>
+<edge source="&quot;CONVNET&quot;" target="&quot;HMDB-51&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"Similar to UCF-101, the ConvNet is also evaluated on HMDB-51 for action recognition, indicating its versatility in handling different datasets and scenarios."</data>
+  <data key="d5">"cross-evaluation, benchmarking"</data>
+  <data key="d6">chunk-e09f3481cc62389e84f21a06f6eb3d7f</data>
+</edge>
+<edge source="&quot;CONVNET&quot;" target="&quot;OPTICAL FLOW&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"Optical flow data is input into the ConvNet for processing and analyzing motion within video frames."</data>
+  <data key="d5">"data input, analysis process"</data>
   <data key="d6">chunk-34a54fcc59f0d516a7e1556a7de2f32b</data>
 </edge>
-<edge source="&quot;TWO-STREAM MODEL (FUSION BY SVM)&quot;" target="&quot;PRE-TRAINED + LAST LAYER UNI-DIRECTIONAL, MULTI-TASK SVM&quot;">
-  <data key="d3">8.0</data>
-  <data key="d4">"The combination of uni-directional training with multi-task SVM learning was crucial for improving the two-stream model's performance."</data>
-  <data key="d5">"model component, technique inclusion"</data>
-  <data key="d6">chunk-86f4b10d1cdb4e6ca763c0d4de0db9cd</data>
-</edge>
-<edge source="&quot;TEMPORAL DERIVATIVES&quot;" target="&quot;SPATIAL DERIVATIVES&quot;">
-  <data key="d3">7.0</data>
-  <data key="d4">"Spatial derivatives capture motion changes within an image while temporal derivatives track changes over time, complementing each other in the network architecture."</data>
-  <data key="d5">"motion analysis, derivative computation"</data>
-  <data key="d6">chunk-bb08a015abf427870e566013b6eb1dd2</data>
-</edge>
-<edge source="&quot;K. SOOMRO, A. R. ZAMIR, M. SHAH&quot;" target="&quot;ECCV&quot;">
-  <data key="d3">7.0</data>
-  <data key="d4">"K. Soomro et al. have contributed to the ECCV conference through their UCF101 dataset."</data>
-  <data key="d5">"dataset contribution, research community"</data>
-  <data key="d6">chunk-640259871e7614dd8e5d3e2cd2bf19ea</data>
-</edge>
-<edge source="&quot;G. W. TAYLOR, R. FERGUS, Y. LECUN, C. BREGLER&quot;" target="&quot;DEEPFLOW: LARGE DISPLACEMENT OPTICAL FLOW WITH DEEP MATCHING&quot;">
-  <data key="d3">8.0</data>
-  <data key="d4">"The researchers have contributed to the development and presentation of DeepFlow."</data>
-  <data key="d5">"technological contribution, research methodology"</data>
-  <data key="d6">chunk-640259871e7614dd8e5d3e2cd2bf19ea</data>
-</edge>
-<edge source="&quot;TEMPORAL CONVNET ARCHITECTURE&quot;" target="&quot;OPTICAL FLOW&quot;">
-  <data key="d3">8.0</data>
-  <data key="d4">"The Temporal ConvNet architecture processes multiple optical flows to extract and analyze complex motion patterns in video data. This relationship highlights how different aspects of Optical Flow are integrated into the network."</data>
-  <data key="d5">"integration, feature extraction"</data>
+<edge source="&quot;CONVNET&quot;" target="&quot;UCF-101 DATASET&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The UCF-101 dataset provides training data for the ConvNet to learn from." "</data>
+  <data key="d5">"training data, model learning"</data>
   <data key="d6">chunk-34a54fcc59f0d516a7e1556a7de2f32b</data>
 </edge>
-<edge source="&quot;SAMPLING FROM IMAGENET TRAINING DATA AUGMENTATION&quot;" target="&quot;CONVNET PRE-TRAINING&quot;">
-  <data key="d3">7.0</data>
-  <data key="d4">"The same data augmentation techniques used in ImageNet training are applied to pre-train the spatial ConvNet, improving its generalization ability."</data>
-  <data key="d5">"data utilization, pre-training technique"</data>
-  <data key="d6">chunk-bb08a015abf427870e566013b6eb1dd2</data>
-</edge>
-<edge source="&quot;OPTICAL FLOW&quot;" target="&quot;ISA (IMAGE SEQUENCE ALIGNMENT)&quot;">
-  <data key="d3">12.0</data>
-  <data key="d4">"Optical flow and ISA both contribute to the learning of spatio-temporal features in different ways but serve a similar purpose." "</data>
-  <data key="d5">"feature extraction, unsupervised learning"</data>
-  <data key="d6">chunk-bea5c00b3143ba4861cf69fe7d94037c</data>
-</edge>
-<edge source="&quot;OPTICAL FLOW&quot;" target="&quot;MBH&quot;">
-  <data key="d3">7.0</data>
-  <data key="d4">"MBH generalizes HOF by incorporating block structures into the histogram computation, also derived from optical flow. This relationship indicates the evolution and complexity in feature extraction techniques."</data>
-  <data key="d5">"generalization, descriptor derivation"</data>
-  <data key="d6">chunk-34a54fcc59f0d516a7e1556a7de2f32b</data>
-</edge>
-<edge source="&quot;OPTICAL FLOW&quot;" target="&quot;CONVOLUTIONAL RBM&quot;">
-  <data key="d3">14.0</data>
-  <data key="d4">"Both optical flow and convolutional RBMs are techniques used in unsupervised learning of spatio-temporal features for video recognition." "</data>
-  <data key="d5">"feature extraction, unsupervised learning"</data>
-  <data key="d6">chunk-bea5c00b3143ba4861cf69fe7d94037c</data>
-</edge>
-<edge source="&quot;OPTICAL FLOW&quot;" target="&quot;HOF&quot;">
-  <data key="d3">8.0</data>
-  <data key="d4">"HOF is derived from the optical flow by computing histograms of orientations, which are then used as descriptors for feature extraction. This relationship shows the origin and usage of HOF within the context of Optical Flow."</data>
-  <data key="d5">"descriptor derivation, processing"</data>
-  <data key="d6">chunk-34a54fcc59f0d516a7e1556a7de2f32b</data>
-</edge>
-<edge source="&quot;OPTICAL FLOW&quot;" target="&quot;CONVNET&quot;">
-  <data key="d3">8.0</data>
-  <data key="d4">"Optical Flow is an input to ConvNets, which are designed to process it using convolutional filters. This relationship reflects the integration of optical flow into deep learning architectures."</data>
-  <data key="d5">"input-processing, feature extraction"</data>
-  <data key="d6">chunk-34a54fcc59f0d516a7e1556a7de2f32b</data>
-</edge>
-<edge source="&quot;R. COLLOBERT AND J. WESTON&quot;" target="&quot;PROC. ICML &quot;">
+<edge source="&quot;CONVNET&quot;" target="&quot;LOCAL RESPONSE NORMALIZATION&quot;">
   <data key="d3">16.0</data>
-  <data key="d4">"Their work was published in Proceedings of the International Conference on Machine Learning (ICML), indicating their contribution to machine learning research."&lt;SEP&gt;"Their work was published in Proceedings of the International Conference on Machine Learning (ICML), indicating their contribution to machine learning research." &lt;|"publication, research contribution"</data>
-  <data key="d5">"publication, research contribution"&lt;SEP&gt;8</data>
+  <data key="d4">"The ConvNet architecture incorporates local response normalization to improve generalization and reduce overfitting by normalizing activity across channels locally."</data>
+  <data key="d5">"normalization technique, improvement"</data>
+  <data key="d6">chunk-bb08a015abf427870e566013b6eb1dd2</data>
+</edge>
+<edge source="&quot;CONVNET&quot;" target="&quot;IMAGENET CHALLENGE DATASET&quot;">
+  <data key="d3">16.0</data>
+  <data key="d4">"The ConvNet is pre-trained on the ImageNet challenge dataset for image classification tasks."</data>
+  <data key="d5">"pre-training, large-scale data"</data>
+  <data key="d6">chunk-cf87ec63a4b1e44cb5a04807041bf1c1</data>
+</edge>
+<edge source="&quot;CONVNET&quot;" target="&quot;HIDDEN LAYERS CONFIGURATION&quot;">
+  <data key="d3">6.0</data>
+  <data key="d4">"The hidden layers configuration remains largely the same as that used in the spatial ConvNet and forms part of the temporal ConvNet architecture." "</data>
+  <data key="d5">"architecture design, consistency"</data>
+  <data key="d6">chunk-34a54fcc59f0d516a7e1556a7de2f32b</data>
+</edge>
+<edge source="&quot;CONVNET&quot;" target="&quot;UCF-101&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"The ConvNet is evaluated and trained using UCF-101 for action recognition, showcasing its application in real-world scenarios of video understanding."</data>
+  <data key="d5">"training, evaluation"</data>
+  <data key="d6">chunk-e09f3481cc62389e84f21a06f6eb3d7f</data>
+</edge>
+<edge source="&quot;CONVNET&quot;" target="&quot;HOF AND MBH LOCAL DESCRIPTORS&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"The HOF and MBH local descriptors are captured by our convolutional model through the use of a single convolutional layer." "</data>
+  <data key="d5">"descriptor extraction, feature learning"</data>
+  <data key="d6">chunk-34a54fcc59f0d516a7e1556a7de2f32b</data>
+</edge>
+<edge source="&quot;CONVNET&quot;" target="&quot;96FILTERS&quot;">
+  <data key="d3">16.0</data>
+  <data key="d4">"The ConvNet architecture includes 96ﬁlters, which are part of its layer configuration for processing visual data."</data>
+  <data key="d5">"filter inclusion, network architecture"</data>
+  <data key="d6">chunk-bb08a015abf427870e566013b6eb1dd2</data>
+</edge>
+<edge source="&quot;CONVNET&quot;" target="&quot;CAFFE TOOLBOX&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"The implementation of ConvNets is derived from the Caffe toolbox, suggesting a dependency on this framework for model training and experimentation. "</data>
+  <data key="d5">"implementation, dependency"</data>
+  <data key="d6">chunk-e09f3481cc62389e84f21a06f6eb3d7f</data>
+</edge>
+<edge source="&quot;CONVNET&quot;" target="&quot;IMAGENET ILSVRC-2012&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The ConvNet undergoes pre-training on ImageNet ILSVRC-2012 before fine-tuning on UCF-101, highlighting the use of transfer learning from large-scale datasets to specialized ones."</data>
+  <data key="d5">"transfer learning, pre-training"</data>
+  <data key="d6">chunk-e09f3481cc62389e84f21a06f6eb3d7f</data>
+</edge>
+<edge source="&quot;HAND-CRAFTED FEATURES&quot;" target="&quot;MULTI-TASK LEARNING&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"Multi-task Learning can leverage hand-crafted features to increase the amount of training data and improve performance on both tasks simultaneously."</data>
+  <data key="d5">"feature enhancement, data augmentation"</data>
+  <data key="d6">chunk-8c67a225b7a1ed3a8ac1fd7cde9eccc1</data>
+</edge>
+<edge source="&quot;CVPR&quot;" target="&quot;BMVC&quot;">
+  <data key="d3">6.0</data>
+  <data key="d4">"Both focus on computer vision and pattern recognition, though CVPR is broader in scope."</data>
+  <data key="d5">&lt;"conferences, computer vision"</data>
   <data key="d6">chunk-667a0a2b5957ead16915a7cfad43c8de</data>
 </edge>
-<edge source="&quot;DEEP CONVNETS&quot;" target="&quot;SOFTMAX SCORES&quot;">
+<edge source="&quot;CVPR&quot;" target="&quot;ILSVRC&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"Both are well-known conferences in the field of computer vision and pattern recognition."</data>
+  <data key="d5">&lt;"conferences, computer vision"</data>
+  <data key="d6">chunk-667a0a2b5957ead16915a7cfad43c8de</data>
+</edge>
+<edge source="&quot;DEEP CONVOLUTIONAL NETWORKS (CONVNETS)&quot;" target="&quot;TWO-STREAM CONVOLUTIONAL NETWORKS&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The proposed Two-Stream architecture builds upon the state-of-the-art Deep Convolutional Networks for still image representation."</data>
+  <data key="d5">"framework extension, architectural basis"</data>
+  <data key="d6">chunk-8c67a225b7a1ed3a8ac1fd7cde9eccc1</data>
+</edge>
+<edge source="&quot;PROC. CVPR &quot;" target="&quot;H. WANG, A. KLÄSER, C. SCHMID, C.-L. LIU&quot;">
+  <data key="d3">14.0</data>
+  <data key="d4">"Their work on 'Action recognition by dense trajectories' was presented at Proc. CVPR."</data>
+  <data key="d5">"event participation, research contribution"</data>
+  <data key="d6">chunk-640259871e7614dd8e5d3e2cd2bf19ea</data>
+</edge>
+<edge source="&quot;F. PERRONNIN, J. SÁNCHEZ, T. MENSINK&quot;" target="&quot;G. W. TAYLOR, R. FERGUS, Y. LECUN, C. BREGLER&quot;">
+  <data key="d3">6.0</data>
+  <data key="d4">"Both groups work on image classification and feature learning techniques, which are foundational to the broader field of action recognition."</data>
+  <data key="d5">"field overlap, knowledge sharing"</data>
+  <data key="d6">chunk-640259871e7614dd8e5d3e2cd2bf19ea</data>
+</edge>
+<edge source="&quot;F. PERRONNIN, J. SÁNCHEZ, T. MENSINK&quot;" target="&quot;PROC. ECCV &quot;">
+  <data key="d3">16.0</data>
+  <data key="d4">"Their paper on improving the Fisher kernel for large-scale image classification was presented at Proc. ECCV."</data>
+  <data key="d5">"conference submission, research contribution"</data>
+  <data key="d6">chunk-640259871e7614dd8e5d3e2cd2bf19ea</data>
+</edge>
+<edge source="&quot;F. PERRONNIN, J. SÁNCHEZ, T. MENSINK&quot;" target="&quot;G. W. TAYLOR, R. FERGUS, Y . LECUN, C. BREGLER&quot;">
+  <data key="d3">6.0</data>
+  <data key="d4">"Both groups work on image classification and feature learning techniques, which are foundational to the broader field of action recognition."</data>
+  <data key="d5">"field overlap, knowledge sharing"</data>
+  <data key="d6">chunk-640259871e7614dd8e5d3e2cd2bf19ea</data>
+</edge>
+<edge source="&quot;KINEMATIC FEATURES&quot;" target="&quot;TEMPORAL CONVNET&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"Kinematic features such as divergence, curl, and shear are computed from the optical flow gradient and can be captured by our convolutional model." "</data>
+  <data key="d5">"feature computation, model capability"</data>
+  <data key="d6">chunk-34a54fcc59f0d516a7e1556a7de2f32b</data>
+</edge>
+<edge source="&quot;K. SIMONYAN, A. VEDALDI, A. ZISSERMAN&quot;" target="&quot;NIPS &quot;">
+  <data key="d3">14.0</data>
+  <data key="d4">"Their work on deep Fisher networks for large-scale image classification was presented at NIPS."</data>
+  <data key="d5">"event participation, research collaboration"</data>
+  <data key="d6">chunk-640259871e7614dd8e5d3e2cd2bf19ea</data>
+</edge>
+<edge source="&quot;TRAJECTORY FEATURE&quot;" target="&quot;TEMPORAL CONVNET&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"The trajectory feature is learned through stack displacement vectors along the trajectory in the temporal ConvNet architecture." "</data>
+  <data key="d5">"feature learning, trajectory stacking"</data>
+  <data key="d6">chunk-34a54fcc59f0d516a7e1556a7de2f32b</data>
+</edge>
+<edge source="&quot;K. SOOMRO, A. R. ZAMIR, M. SHAH&quot;" target="&quot;CORR &quot;">
   <data key="d3">18.0</data>
-  <data key="d4">"Deep ConvNets generate softmax scores which are then used in late fusion for improved action classification accuracy." "</data>
-  <data key="d5">"output mechanism, accuracy enhancement"</data>
-  <data key="d6">chunk-bea5c00b3143ba4861cf69fe7d94037c</data>
-</edge>
-<edge source="&quot;B. CHEN, J. A. TING, B. MARLIN, AND N. DE FREITAS&quot;" target="&quot;NIPS DEEP LEARNING AND UNSUPERVISED FEATURE LEARNING WORKSHOP &quot;">
-  <data key="d3">14.0</data>
-  <data key="d4">"Their work was published in a workshop focused on deep learning and unsupervised feature learning, highlighting their expertise in this field."&lt;SEP&gt;"Their work was published in a workshop focused on deep learning and unsupervised feature learning, highlighting their expertise in this field." &lt;|"publication, research contribution"</data>
-  <data key="d5">"publication, research contribution"&lt;SEP&gt;7</data>
-  <data key="d6">chunk-667a0a2b5957ead16915a7cfad43c8de</data>
-</edge>
-<edge source="&quot;K. CHATFIELD, K. SIMONYAN, A. VEDALDI, AND A. ZISSERMAN&quot;" target="&quot;PROC. BMVC &quot;">
-  <data key="d3">14.0</data>
-  <data key="d4">"Their work was published in Proceedings of the British Machine Vision Conference (BMVC), indicating their contribution to machine vision research."&lt;SEP&gt;"Their work was published in Proceedings of the British Machine Vision Conference (BMVC), indicating their contribution to machine vision research." &lt;|"publication, research contribution"</data>
-  <data key="d5">"publication, research contribution"&lt;SEP&gt;7</data>
-  <data key="d6">chunk-667a0a2b5957ead16915a7cfad43c8de</data>
-</edge>
-<edge source="&quot;TWO-STREAM ARCHITECTURE&quot;" target="&quot;ACTION CLASSIFICATION&quot;">
-  <data key="d3">16.0</data>
-  <data key="d4">"Action classification tasks benefit from the two-stream architecture that separates spatial and temporal recognition streams." "</data>
-  <data key="d5">"task relevance, architectural design"</data>
-  <data key="d6">chunk-bea5c00b3143ba4861cf69fe7d94037c</data>
-</edge>
-<edge source="&quot;TWO-STREAM ARCHITECTURE&quot;" target="&quot;LATE FUSION&quot;">
-  <data key="d3">16.0</data>
-  <data key="d4">"The two-stream architecture relies on late fusion to combine the outputs of spatial and temporal streams for better recognition accuracy." "</data>
-  <data key="d5">"architectural design, integration mechanism"</data>
-  <data key="d6">chunk-bea5c00b3143ba4861cf69fe7d94037c</data>
-</edge>
-<edge source="&quot;PRE-TRAINED + LAST LAYER UNI-DIRECTIONAL, MULTI-TASK AVERAGING&quot;" target="&quot;TWO-STREAM MODEL (FUSION BY AVERAGING)&quot;">
-  <data key="d3">8.0</data>
-  <data key="d4">"The use of multi-task learning in conjunction with uni-directional averaging improved the accuracy of the two-stream model."</data>
-  <data key="d5">"model component, technique inclusion"</data>
-  <data key="d6">chunk-86f4b10d1cdb4e6ca763c0d4de0db9cd</data>
-</edge>
-<edge source="&quot;TRAJECTORY STACKING&quot;" target="&quot;BI-DIRECTIONAL OPTICAL FLOW&quot;">
-  <data key="d3">5.0</data>
-  <data key="d4">"Bi-directional optical flow outperforms trajectory stacking in certain conditions but is only slightly better than uni-directional forward flow."</data>
-  <data key="d5">&lt;"comparative analysis, performance improvement"</data>
-  <data key="d6">chunk-eb84389e2cb0fb2dfc96d4777be87037</data>
-</edge>
-<edge source="&quot;G. W. TAYLOR, R. FERGUS, Y. LECUN, C. BREGLER, H. WANG, M. M. ULLAH, A. KLÄSER, I. LAPTEV, P. WEINZAEPFEL, J. REVAUD, Z. HARCHAOUI&quot;" target="&quot;ECCV&quot;">
-  <data key="d3">9.0</data>
-  <data key="d4">"Multiple researchers and their collaborators have contributed to the ECCV conference through various papers."</data>
-  <data key="d5">"conference participation, research collaboration"</data>
+  <data key="d4">"UCF101: A dataset of 101 human actions classes from videos in the wild was published on CoRR."</data>
+  <data key="d5">"dataset publication, research contribution"</data>
   <data key="d6">chunk-640259871e7614dd8e5d3e2cd2bf19ea</data>
 </edge>
-<edge source="&quot;IMAGENET CHALLENGE DATASET&quot;" target="&quot;TWO-STREAM CONVOLUTIONAL NETWORKS&quot;">
+<edge source="&quot;K. SOOMRO, A. R. ZAMIR, M. SHAH&quot;" target="&quot;H. WANG, C. SCHMID&quot;">
+  <data key="d3">14.0</data>
+  <data key="d4">"H. Wang and C. Schmid's work on action recognition involves the use of datasets like UCF101 created by K. Soomro et al., indicating a dependency on existing data sources."</data>
+  <data key="d5">"dataset dependency, research collaboration"</data>
+  <data key="d6">chunk-640259871e7614dd8e5d3e2cd2bf19ea</data>
+</edge>
+<edge source="&quot;G. W. TAYLOR, R. FERGUS, Y. LECUN, C. BREGLER&quot;" target="&quot;PROC. ECCV &quot;">
   <data key="d3">8.0</data>
-  <data key="d4">"The spatial stream of the proposed architecture is pre-trained using the ImageNet challenge dataset to leverage large annotated image data."</data>
-  <data key="d5">"pre-training, data utilization"</data>
-  <data key="d6">chunk-8c67a225b7a1ed3a8ac1fd7cde9eccc1</data>
+  <data key="d4">"Their work on convolutional learning of spatio-temporal features was presented at Proc. ECCV."</data>
+  <data key="d5">"conference submission, research contribution"</data>
+  <data key="d6">chunk-640259871e7614dd8e5d3e2cd2bf19ea</data>
 </edge>
-<edge source="&quot;STACKED VIDEO FRAMES ARCHITECTURE&quot;" target="&quot;TWO-STREAM CONVOLUTIONAL NETWORKS&quot;">
-  <data key="d3">9.0</data>
-  <data key="d4">"The proposed Two-Stream Convolutional Networks architecture outperforms the Stacked Video Frames approach in action recognition on video data."</data>
-  <data key="d5">"performance improvement, architectural comparison"</data>
-  <data key="d6">chunk-8c67a225b7a1ed3a8ac1fd7cde9eccc1</data>
+<edge source="&quot;GPUS&quot;" target="&quot;RESEARCH&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"GPUs are donated for use in the research, indicating their importance and role in advancing the project."</data>
+  <data key="d5">&lt;"donation, research materials"</data>
+  <data key="d6">chunk-667a0a2b5957ead16915a7cfad43c8de</data>
 </edge>
-<edge source="&quot;MOTION BOUNDARY HISTOGRAM (MBH)&quot;" target="&quot;TWO-STREAM CONVOLUTIONAL NETWORKS&quot;">
-  <data key="d3">6.0</data>
-  <data key="d4">"The MBH feature is a gradient-based approach that was found to perform well in trajectory-based pipelines but not used in the proposed architecture."</data>
-  <data key="d5">"feature comparison, non-utilization"</data>
-  <data key="d6">chunk-8c67a225b7a1ed3a8ac1fd7cde9eccc1</data>
+<edge source="&quot;H. WANG, C. SCHMID&quot;" target="&quot;P. WEINZAEPFEL, J. REVAUD, Z. HARCHAOUI, C. SCHMID&quot;">
+  <data key="d3">14.0</data>
+  <data key="d4">"Both groups contribute to the field of optical flow and deep matching techniques."</data>
+  <data key="d5">"methodology overlap, technique evolution"</data>
+  <data key="d6">chunk-640259871e7614dd8e5d3e2cd2bf19ea</data>
 </edge>
-<edge source="&quot;MEAN FLOW SUBTRACTION&quot;" target="&quot;CONVNET&quot;">
+<edge source="&quot;ILSVRC&quot;" target="&quot;ECCV&quot;">
   <data key="d3">7.0</data>
-  <data key="d4">"Mean flow subtraction is a preprocessing step applied before inputting data into ConvNets to improve their performance. This relationship highlights the importance of this technique in enhancing model inputs."</data>
-  <data key="d5">"preprocessing, zero-centering"</data>
-  <data key="d6">chunk-34a54fcc59f0d516a7e1556a7de2f32b</data>
-</edge>
-<edge source="&quot;H. WANG, C. SCHMID&quot;" target="&quot;ECCV&quot;">
-  <data key="d3">8.0</data>
-  <data key="d4">"H. Wang and C. Schmid presented papers on action recognition at ECCV."</data>
-  <data key="d5">"presentation, research collaboration"</data>
-  <data key="d6">chunk-640259871e7614dd8e5d3e2cd2bf19ea</data>
-</edge>
-<edge source="&quot;H. WANG, C. SCHMID&quot;" target="&quot;UCF101, A DATASET OF 101 HUMAN ACTIONS CLASSES FROM VIDEOS IN THE WILD&quot;">
-  <data key="d3">8.0</data>
-  <data key="d4">"H. Wang and C. Schmid have evaluated local spatio-temporal features for action recognition using UCF101."</data>
-  <data key="d5">"dataset evaluation, research methodology"</data>
-  <data key="d6">chunk-640259871e7614dd8e5d3e2cd2bf19ea</data>
-</edge>
-<edge source="&quot;DENSE OPTICAL FLOW&quot;" target="&quot;TWO-STREAM CONVOLUTIONAL NETWORKS&quot;">
-  <data key="d3">8.0</data>
-  <data key="d4">"Dense optical flow computation is crucial for training the temporal stream of the Two-Stream Convolutional Networks."</data>
-  <data key="d5">"training data, feature importance"</data>
-  <data key="d6">chunk-8c67a225b7a1ed3a8ac1fd7cde9eccc1</data>
-</edge>
-<edge source="&quot;96FILTERS&quot;" target="&quot;CONVNET ARCHITECTURE&quot;">
-  <data key="d3">8.0</data>
-  <data key="d4">"Each of the 96 ﬁlters is part of the ConvNet architecture designed to capture specific optical flow displacement fields."</data>
-  <data key="d5">"component integration, feature extraction"</data>
-  <data key="d6">chunk-bb08a015abf427870e566013b6eb1dd2</data>
-</edge>
-<edge source="&quot;H. KUEHNE, H. JHUANG, E. GARROTE, T. POGGIO, AND T. SERRE&quot;" target="&quot;PROC. ICCV &quot;">
-  <data key="d3">16.0</data>
-  <data key="d4">"Their work was published in Proceedings of the International Conference on Computer Vision (ICCV), indicating their contribution to computer vision research."&lt;SEP&gt;"Their work was published in Proceedings of the International Conference on Computer Vision (ICCV), indicating their contribution to computer vision research." &lt;|"publication, research contribution"</data>
-  <data key="d5">"publication, research contribution"&lt;SEP&gt;8</data>
+  <data key="d4">"Both are major annual conferences in the field of computer vision."</data>
+  <data key="d5">&lt;"conferences, computer vision"</data>
   <data key="d6">chunk-667a0a2b5957ead16915a7cfad43c8de</data>
+</edge>
+<edge source="&quot;H. WANG, M. M. ULLAH, A. KLÄSER, I. LAPTEV, C. SCHMID, C.-L. LIU&quot;" target="&quot;PROC. BMVC &quot;">
+  <data key="d3">16.0</data>
+  <data key="d4">"Their work on evaluating local spatiotemporal features for action recognition was published at Proc. BMVC."</data>
+  <data key="d5">"conference submission, research contribution"</data>
+  <data key="d6">chunk-640259871e7614dd8e5d3e2cd2bf19ea</data>
+</edge>
+<edge source="&quot;H. WANG, M. M. ULLAH, A. KLÄSER, I. LAPTEV, C. SCHMID, C.-L. LIU&quot;" target="&quot;G. W. TAYLOR, R. FERGUS, Y. LECUN, C. BREGLER, P. WEINZAEPFEL, J. REVAUD, Z. HARCHAOUI, C. SCHMID&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"H. Wang et al.'s work builds on the foundational research by G. W. Taylor and colleagues in convolutional learning and action recognition techniques."</data>
+  <data key="d5">"research foundation, building upon existing work"</data>
+  <data key="d6">chunk-640259871e7614dd8e5d3e2cd2bf19ea</data>
+</edge>
+<edge source="&quot;H. WANG, M. M. ULLAH, A. KLÄSER, I. LAPTEV, C. SCHMID, C.-L. LIU&quot;" target="&quot;G. W. TAYLOR, R. FERGUS, Y . LECUN, C. BREGLER, P. WEINZAEPFEL, J. REVAUD, Z. HARCHAOUI, C. SCHMID&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"H. Wang et al.'s work builds on the foundational research by G. W. Taylor and colleagues in convolutional learning and action recognition techniques."</data>
+  <data key="d5">"research foundation, building upon existing work"</data>
+  <data key="d6">chunk-640259871e7614dd8e5d3e2cd2bf19ea</data>
+</edge>
+<edge source="&quot;P. WEINZAEPFEL, J. REVAUD, Z. HARCHAOUI, C. SCHMID&quot;" target="&quot;PROC. ICCV &quot;">
+  <data key="d3">16.0</data>
+  <data key="d4">"Their work on DeepFlow: Large displacement optical flow with deep matching was presented at Proc. ICCV."</data>
+  <data key="d5">"event participation, research collaboration"</data>
+  <data key="d6">chunk-640259871e7614dd8e5d3e2cd2bf19ea</data>
+</edge>
+<edge source="&quot;UCF-101&quot;" target="&quot;TWO-STREAM MODEL&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"The Two-stream model is evaluated on UCF-101 dataset, showing high accuracy and outperforming other methods."</data>
+  <data key="d5">"evaluation, superior performance"</data>
+  <data key="d6">chunk-86f4b10d1cdb4e6ca763c0d4de0db9cd</data>
 </edge>
 <edge source="&quot;UCF-101&quot;" target="&quot;TWO-STREAM CONVOLUTIONAL NETWORKS&quot;">
   <data key="d3">8.0</data>
-  <data key="d4">"The Two-Stream Convolutional Networks architecture is tested on UCF-101 for performance evaluation."</data>
-  <data key="d5">"performance evaluation, benchmarking"</data>
+  <data key="d4">"The Two-Stream Convolutional Networks are evaluated on UCF-101, showing competitive performance with state-of-the-art methods."</data>
+  <data key="d5">"performance evaluation, benchmark use"</data>
   <data key="d6">chunk-8c67a225b7a1ed3a8ac1fd7cde9eccc1</data>
 </edge>
-<edge source="&quot;UCF-101&quot;" target="&quot;TEMPORAL CONVNET&quot;">
-  <data key="d3">24.0</data>
-  <data key="d4">"The Temporal ConvNet was trained on UCF-101 for evaluating its performance."&lt;SEP&gt;"The Temporal ConvNets are trained from scratch on UCF-101, indicating their use with this dataset."</data>
-  <data key="d5">"performance evaluation, dataset usage"&lt;SEP&gt;"training, dataset usage"&lt;SEP&gt;&lt;"training, dataset usage"</data>
-  <data key="d6">chunk-86f4b10d1cdb4e6ca763c0d4de0db9cd&lt;SEP&gt;chunk-eb84389e2cb0fb2dfc96d4777be87037</data>
-</edge>
-<edge source="&quot;F. PERRONNIN, J. S ´ANCHEZ, AND T. MENSINK&quot;" target="&quot;PROC. ECCV &quot;">
-  <data key="d3">16.0</data>
-  <data key="d4">"Their work was published in Proceedings of the European Conference on Computer Vision (ECCV), indicating their contribution to computer vision research."&lt;SEP&gt;"Their work was published in Proceedings of the European Conference on Computer Vision (ECCV), indicating their contribution to computer vision research." &lt;|"publication, research contribution"</data>
-  <data key="d5">"publication, research contribution"&lt;SEP&gt;8</data>
-  <data key="d6">chunk-667a0a2b5957ead16915a7cfad43c8de</data>
-</edge>
-<edge source="&quot;Q. V . LE, W. Y . ZOU, S. Y . YEUNG, AND A. Y . NG&quot;" target="&quot;NIPS &quot;">
-  <data key="d3">16.0</data>
-  <data key="d4">"Their work was published in NIPS (Neural Information Processing Systems), indicating their contribution to machine learning research."&lt;SEP&gt;"Their work was published in NIPS (Neural Information Processing Systems), indicating their contribution to machine learning research." &lt;|"publication, research contribution"</data>
-  <data key="d5">"publication, research contribution"&lt;SEP&gt;8</data>
-  <data key="d6">chunk-667a0a2b5957ead16915a7cfad43c8de</data>
-</edge>
-<edge source="&quot;H. WANG, M. M. ULLAH, A. KLÄSER, I. LAPTEV, C. SCHMID&quot;" target="&quot;EVALUATION OF LOCAL SPATIO-TEMPORAL FEATURES FOR ACTION RECOGNITION&quot;">
-  <data key="d3">8.0</data>
-  <data key="d4">"H. Wang and his team have evaluated local spatio-temporal features in their research."</data>
-  <data key="d5">"evaluation methodology, research collaboration"</data>
+<edge source="&quot;M. D. ZEILER, R. FERGUS&quot;" target="&quot;CORR &quot;">
+  <data key="d3">18.0</data>
+  <data key="d4">"Their paper 'Visualizing and understanding convolutional networks' was published on CoRR."</data>
+  <data key="d5">"dataset publication, research contribution"</data>
   <data key="d6">chunk-640259871e7614dd8e5d3e2cd2bf19ea</data>
 </edge>
-<edge source="&quot;TEMPORAL CONVNET&quot;" target="&quot;MEAN DISPLACEMENT SUBTRACTION&quot;">
-  <data key="d3">6.0</data>
-  <data key="d4">"Mean displacement subtraction is applied to reduce global motion effects in temporal data during training of Temporal ConvNets."</data>
-  <data key="d5">&lt;"data preprocessing, reduction of artifacts"</data>
+<edge source="&quot;G. W. TAYLOR, R. FERGUS, Y . LECUN, C. BREGLER&quot;" target="&quot;PROC. ECCV &quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"Their work on convolutional learning of spatio-temporal features was presented at Proc. ECCV."</data>
+  <data key="d5">"conference submission, research contribution"</data>
+  <data key="d6">chunk-640259871e7614dd8e5d3e2cd2bf19ea</data>
+</edge>
+<edge source="&quot;TEMPORAL CONVNET&quot;" target="&quot;UCF-101 DATASET&quot;">
+  <data key="d3">17.0</data>
+  <data key="d4">"Temporal ConvNets are trained on the UCF-101 dataset to assess their effectiveness in action recognition tasks."&lt;SEP&gt;"Temporal ConvNets are trained on the UCF-101 dataset, which is a significant source of training data for them."</data>
+  <data key="d5">"evaluation, training"&lt;SEP&gt;&lt;"training, dataset usage"</data>
+  <data key="d6">chunk-e09f3481cc62389e84f21a06f6eb3d7f&lt;SEP&gt;chunk-eb84389e2cb0fb2dfc96d4777be87037</data>
+</edge>
+<edge source="&quot;TEMPORAL CONVNET&quot;" target="&quot;MULTI-TASK LEARNING&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"Multi-task learning is used for training the Temporal ConvNet, enhancing its effectiveness in video classification."</data>
+  <data key="d5">"training method, improved accuracy"</data>
+  <data key="d6">chunk-86f4b10d1cdb4e6ca763c0d4de0db9cd</data>
+</edge>
+<edge source="&quot;TEMPORAL CONVNET&quot;" target="&quot;STACKED OPTICAL FLOWS&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The temporal ConvNet is trained using the input configurations that include multiple stacked optical flows."</data>
+  <data key="d5">&lt;"training, configuration"</data>
   <data key="d6">chunk-eb84389e2cb0fb2dfc96d4777be87037</data>
 </edge>
-<edge source="&quot;TEMPORAL CONVNET&quot;" target="&quot;DEEP VIDEO CLASSIFICATION MODEL&quot;">
-  <data key="d3">8.0</data>
-  <data key="d4">"The Deep Video Classification Model incorporates a Temporal ConvNet for recognizing patterns over time."</data>
-  <data key="d5">"model architecture, integration"</data>
+<edge source="&quot;TEMPORAL CONVNET&quot;" target="&quot;DROPOUT REGULARIZATION&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"Higher dropout regularization is used in temporal ConvNets to avoid overfitting and improve generalization during training. "</data>
+  <data key="d5">"regularization, prevention of overfitting"</data>
+  <data key="d6">chunk-e09f3481cc62389e84f21a06f6eb3d7f</data>
+</edge>
+<edge source="&quot;TEMPORAL CONVNET&quot;" target="&quot;HMDB-51 DATASET&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"Temporal ConvNets are evaluated using HMDB-51 dataset, which is smaller but complementary to UCF-101 in terms of action classes."</data>
+  <data key="d5">&lt;"evaluation, dataset usage"</data>
+  <data key="d6">chunk-eb84389e2cb0fb2dfc96d4777be87037</data>
+</edge>
+<edge source="&quot;TEMPORAL CONVNET&quot;" target="&quot;SPATIAL CONVNET&quot;">
+  <data key="d3">27.0</data>
+  <data key="d4">"The Spatial and Temporal ConvNets are combined using averaging or SVM methods to improve overall performance in video classification."&lt;SEP&gt;"The Spatial and Temporal ConvNets are combined using averaging or SVM to achieve better results in video classification."&lt;SEP&gt;"The Spatial and Temporal ConvNets are part of a two-stream model that shows superior performance on UCF-101 and HMDB-51."</data>
+  <data key="d5">"fusion method, enhanced accuracy"&lt;SEP&gt;"fusion method, enhanced performance"&lt;SEP&gt;"integration, enhanced performance"</data>
   <data key="d6">chunk-86f4b10d1cdb4e6ca763c0d4de0db9cd</data>
 </edge>
-<edge source="&quot;ECCV&quot;" target="&quot;F. PERRONNIN, J. SÁNCHEZ, T. MENSINK, K. SIMONYAN, A. VEDALDI, A. ZISSERMAN, G. W. TAYLOR, R. FERGUS, Y. LECUN, C. BREGLER, H. WANG, M. M. ULLAH, A. KLÄSER, I. LAPTEV, P. WEINZAEPFEL, J. REVAUD, Z. HARCHAOUI&quot;">
-  <data key="d3">9.0</data>
-  <data key="d4">"Multiple researchers and their collaborators have contributed to the papers presented at ECCV."</data>
-  <data key="d5">"academic contribution, research community"</data>
-  <data key="d6">chunk-640259871e7614dd8e5d3e2cd2bf19ea</data>
-</edge>
-<edge source="&quot;M. JAIN, H. JEGOU, AND P. BOUTHEMY&quot;" target="&quot;PROC. CVPR &quot;">
-  <data key="d3">16.0</data>
-  <data key="d4">"Their work was published in Proceedings of the Conference on Computer Vision and Pattern Recognition (CVPR), indicating their contribution to computer vision research."&lt;SEP&gt;"Their work was published in Proceedings of the Conference on Computer Vision and Pattern Recognition (CVPR), indicating their contribution to computer vision research." &lt;|"publication, research contribution"</data>
-  <data key="d5">"publication, research contribution"&lt;SEP&gt;8</data>
-  <data key="d6">chunk-667a0a2b5957ead16915a7cfad43c8de</data>
-</edge>
-<edge source="&quot;CONVNET&quot;" target="&quot;HMAX MODEL&quot;">
-  <data key="d3">6.0</data>
-  <data key="d4">"Both HMAX and ConvNet are used for classification tasks but differ in depth and training methodology, with ConvNets being more trainable from data. This relationship illustrates the evolution of model architectures."</data>
-  <data key="d5">"architectural comparison, deep learning"</data>
+<edge source="&quot;TEMPORAL CONVNET&quot;" target="&quot;SPATIO-TEMPORAL LOCAL FEATURES&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"Our temporal ConvNet generalises spatio-temporal local features from optical flow data." "</data>
+  <data key="d5">"feature extraction, model capability"</data>
   <data key="d6">chunk-34a54fcc59f0d516a7e1556a7de2f32b</data>
 </edge>
-<edge source="&quot;CONVNET&quot;" target="&quot;SPATIO-TEMPORAL HMAX NETWORK&quot;">
+<edge source="&quot;TWO-STREAM CONVOLUTIONAL NETWORKS&quot;" target="&quot;HMDB-51&quot;">
   <data key="d3">9.0</data>
-  <data key="d4">"Both the spatial and temporal ConvNets outperformed the spatio-temporal HMAX network in experiments, indicating improved performance."</data>
-  <data key="d5">"performance comparison, improvement"</data>
+  <data key="d4">"The proposed Two-Stream architecture is also tested against HMDB-51, demonstrating superior results compared to previous attempts."</data>
+  <data key="d5">"benchmark comparison, performance improvement"</data>
+  <data key="d6">chunk-8c67a225b7a1ed3a8ac1fd7cde9eccc1</data>
+</edge>
+<edge source="&quot;TWO-STREAM CONVOLUTIONAL NETWORKS&quot;" target="&quot;ACTION RECOGNITION&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"The Two-Stream Convolutional Networks architecture is designed specifically for action recognition in videos."</data>
+  <data key="d5">"application domain, task focus"</data>
+  <data key="d6">chunk-8c67a225b7a1ed3a8ac1fd7cde9eccc1</data>
+</edge>
+<edge source="&quot;SPATIAL CONVNET&quot;" target="&quot;MULTI-GPU TRAINING&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"The spatial ConvNet benefits from multi-GPU training for faster training times and better performance. "</data>
+  <data key="d5">"training speed, performance improvement"</data>
+  <data key="d6">chunk-e09f3481cc62389e84f21a06f6eb3d7f</data>
+</edge>
+<edge source="&quot;SPATIAL CONVNET&quot;" target="&quot;MULTI-TASK LEARNING&quot;">
+  <data key="d3">9.0</data>
+  <data key="d4">"Multi-task learning is applied to the training of the Spatial ConvNet, improving its performance."</data>
+  <data key="d5">"training method, enhanced performance"</data>
   <data key="d6">chunk-86f4b10d1cdb4e6ca763c0d4de0db9cd</data>
 </edge>
-<edge source="&quot;N. DALAL AND B TRIGGS&quot;" target="&quot;PROC. CVPR &quot;">
-  <data key="d3">16.0</data>
-  <data key="d4">"Their work was published in Proceedings of the Conference on Computer Vision and Pattern Recognition (CVPR), indicating their contribution to computer vision research."&lt;SEP&gt;"Their work was published in Proceedings of the Conference on Computer Vision and Pattern Recognition (CVPR), indicating their contribution to computer vision research." &lt;|"publication, research contribution"</data>
-  <data key="d5">"publication, research contribution"&lt;SEP&gt;8</data>
-  <data key="d6">chunk-667a0a2b5957ead16915a7cfad43c8de</data>
-</edge>
-<edge source="&quot;H. JHUANG, T. SERRE, L. WOLF, AND T. POGGIO&quot;" target="&quot;PROC. ICCV &quot;">
-  <data key="d3">16.0</data>
-  <data key="d4">"Their work was published in Proceedings of the International Conference on Computer Vision (ICCV), indicating their contribution to computer vision research."&lt;SEP&gt;"Their work was published in Proceedings of the International Conference on Computer Vision (ICCV), indicating their contribution to computer vision research." &lt;|"publication, research contribution"</data>
-  <data key="d5">"publication, research contribution"&lt;SEP&gt;8</data>
-  <data key="d6">chunk-667a0a2b5957ead16915a7cfad43c8de</data>
-</edge>
-<edge source="&quot;S. JI, W. XU, M. YANG, AND K. YU&quot;" target="&quot;IEEE PAMI &quot;">
-  <data key="d3">16.0</data>
-  <data key="d4">"Their work was published in IEEE Transactions on Pattern Analysis and Machine Intelligence (PAMI), indicating their contribution to machine learning research."&lt;SEP&gt;"Their work was published in IEEE Transactions on Pattern Analysis and Machine Intelligence (PAMI), indicating their contribution to machine learning research." &lt;|"publication, research contribution"</data>
-  <data key="d5">"publication, research contribution"&lt;SEP&gt;8</data>
-  <data key="d6">chunk-667a0a2b5957ead16915a7cfad43c8de</data>
-</edge>
-<edge source="&quot;Y . JIA&quot;" target="&quot;HTTP://CAFFE.BERKELEYVISION.ORG/ &quot;">
-  <data key="d3">16.0</data>
-  <data key="d4">"Their work was published on their website, indicating their contribution to computer vision research and software development."&lt;SEP&gt;"Their work was published on their website, indicating their contribution to computer vision research and software development." &lt;|"publication, software development"</data>
-  <data key="d5">"publication, software development"&lt;SEP&gt;8</data>
-  <data key="d6">chunk-667a0a2b5957ead16915a7cfad43c8de</data>
-</edge>
-<edge source="&quot;A. BERG, J. DENG, AND L. FEI-FEI&quot;" target="&quot;LARGE SCALE VISUAL RECOGNITION CHALLENGE (ILSVRC)&quot;">
-  <data key="d3">16.0</data>
-  <data key="d4">"The authors were involved in organizing or participating in the ILSVRC challenge."&lt;SEP&gt;"The authors were involved in organizing or participating in the ILSVRC challenge." &lt;|"research contribution, challenge organization"</data>
-  <data key="d5">"research contribution, challenge organization"&lt;SEP&gt;8</data>
-  <data key="d6">chunk-667a0a2b5957ead16915a7cfad43c8de</data>
-</edge>
-<edge source="&quot;M. A. GOODALE AND A. D. MILNER&quot;" target="&quot;TRENDS IN NEUROSCIENCES &quot;">
-  <data key="d3">16.0</data>
-  <data key="d4">"Their work was published in Trends in Neurosciences, indicating their contribution to neuroscience research."&lt;SEP&gt;"Their work was published in Trends in Neurosciences, indicating their contribution to neuroscience research." &lt;|"publication, research contribution"</data>
-  <data key="d5">"publication, research contribution"&lt;SEP&gt;8</data>
-  <data key="d6">chunk-667a0a2b5957ead16915a7cfad43c8de</data>
-</edge>
-<edge source="&quot;SPATIO-TEMPORAL FEATURES&quot;" target="&quot;TWO-STREAM CONVOLUTIONAL NETWORKS&quot;">
-  <data key="d3">7.0</data>
-  <data key="d4">"Both the spatial and temporal streams utilize spatio-temporal features for action recognition from video frames and optical flow respectively."</data>
-  <data key="d5">"feature usage, stream integration"</data>
-  <data key="d6">chunk-8c67a225b7a1ed3a8ac1fd7cde9eccc1</data>
-</edge>
-<edge source="&quot;N. DALAL, B TRIGGS, AND C SCHMID&quot;" target="&quot;PROC. ECCV &quot;">
-  <data key="d3">16.0</data>
-  <data key="d4">"Their work was published in Proceedings of the European Conference on Computer Vision (ECCV), indicating their contribution to computer vision research."&lt;SEP&gt;"Their work was published in Proceedings of the European Conference on Computer Vision (ECCV), indicating their contribution to computer vision research." &lt;|"publication, research contribution"</data>
-  <data key="d5">"publication, research contribution"&lt;SEP&gt;8</data>
-  <data key="d6">chunk-667a0a2b5957ead16915a7cfad43c8de</data>
-</edge>
-<edge source="&quot;TWO-STREAM CONVOLUTIONAL NETWORKS&quot;" target="&quot;HISTOGRAM OF ORIENTED GRADIENTS (HOG)&quot;">
-  <data key="d3">5.0</data>
-  <data key="d4">"The HOG feature is mentioned as a baseline method in the related work section but not used in the proposed architecture."</data>
-  <data key="d5">"baseline comparison, feature exclusion"</data>
-  <data key="d6">chunk-8c67a225b7a1ed3a8ac1fd7cde9eccc1</data>
-</edge>
-<edge source="&quot;TWO-STREAM CONVOLUTIONAL NETWORKS&quot;" target="&quot;BAG OF FEATURES (BOF)&quot;">
-  <data key="d3">6.0</data>
-  <data key="d4">"BoF representation is briefly discussed but not utilized by the proposed Two-Stream Convolutional Networks architecture."</data>
-  <data key="d5">"representation technique, non-utilization"</data>
-  <data key="d6">chunk-8c67a225b7a1ed3a8ac1fd7cde9eccc1</data>
-</edge>
-<edge source="&quot;K. CRAMMER AND Y . SINGER&quot;" target="&quot;JMLR &quot;">
-  <data key="d3">16.0</data>
-  <data key="d4">"Their work was published in Journal of Machine Learning Research (JMLR), indicating their contribution to machine learning research."&lt;SEP&gt;"Their work was published in Journal of Machine Learning Research (JMLR), indicating their contribution to machine learning research." &lt;|"publication, research contribution"</data>
-  <data key="d5">"publication, research contribution"&lt;SEP&gt;8</data>
-  <data key="d6">chunk-667a0a2b5957ead16915a7cfad43c8de</data>
-</edge>
-<edge source="&quot;T. BROX, A. BRUHN, N. PAPENBERG, AND J. WEICKERT&quot;" target="&quot;PROC. ECCV &quot;">
+<edge source="&quot;SPATIAL CONVNET&quot;" target="&quot;UCF-101 DATASET&quot;">
   <data key="d3">15.0</data>
-  <data key="d4">"Their work was published in Proceedings of the European Conference on Computer Vision (ECCV), indicating their contribution to computer vision research."&lt;SEP&gt;"Their work was published in Proceedings of the European Conference on Computer Vision (ECCV), indicating their contribution to computer vision research." &lt;|"publication, research contribution"</data>
-  <data key="d5">"publication, research contribution"&lt;SEP&gt;8</data>
-  <data key="d6">chunk-667a0a2b5957ead16915a7cfad43c8de</data>
+  <data key="d4">"Spatial ConvNets are also trained on the UCF-101 dataset but perform differently from Temporal ConvNets in terms of accuracy."&lt;SEP&gt;"The spatial ConvNet is trained and evaluated on the UCF-101 dataset."</data>
+  <data key="d5">&lt;"training, dataset usage"&lt;SEP&gt;&lt;"training, evaluation"</data>
+  <data key="d6">chunk-eb84389e2cb0fb2dfc96d4777be87037</data>
 </edge>
-<edge source="&quot;ANDREW ZISSERMAN&quot;" target="&quot;VISUAL GEOMETRY GROUP&quot;">
-  <data key="d3">9.0</data>
-  <data key="d4">"Andrew Zisserman also collaborates with the Visual Geometry Group on research related to Two-Stream Convolutional Networks."</data>
-  <data key="d5">"research collaboration, affiliation"</data>
-  <data key="d6">chunk-8c67a225b7a1ed3a8ac1fd7cde9eccc1</data>
-</edge>
-<edge source="&quot;P. WEINZAEPFEL, J. REVAUD, Z. HARCHAOUI, C. SCHMID&quot;" target="&quot;ACTION RECOGNITION WITH IMPROVED TRAJECTORIES, DEEPFLOW: LARGE DISPLACEMENT OPTICAL FLOW WITH DEEP MATCHING&quot;">
-  <data key="d3">9.0</data>
-  <data key="d4">"These researchers have contributed to the development and presentation of both techniques."</data>
-  <data key="d5">"technological contribution, research collaboration"</data>
-  <data key="d6">chunk-640259871e7614dd8e5d3e2cd2bf19ea</data>
-</edge>
-<edge source="&quot;K. SIMONYAN, A. VEDALDI, AND A. ZISSERMAN&quot;" target="&quot;NIPS &quot;">
-  <data key="d3">16.0</data>
-  <data key="d4">"Their work was published in NIPS (Neural Information Processing Systems), indicating their contribution to machine learning research."&lt;SEP&gt;"Their work was published in NIPS (Neural Information Processing Systems), indicating their contribution to machine learning research." &lt;|"publication, research contribution"</data>
-  <data key="d5">"publication, research contribution"&lt;SEP&gt;8</data>
-  <data key="d6">chunk-667a0a2b5957ead16915a7cfad43c8de</data>
-</edge>
-<edge source="&quot;I. LAPTEV, M. MARSZAŁEK, C. SCHMID, AND B. ROZENFELD&quot;" target="&quot;PROC. CVPR &quot;">
-  <data key="d3">16.0</data>
-  <data key="d4">"Their work was published in Proceedings of the Conference on Computer Vision and Pattern Recognition (CVPR), indicating their contribution to computer vision research."&lt;SEP&gt;"Their work was published in Proceedings of the Conference on Computer Vision and Pattern Recognition (CVPR), indicating their contribution to computer vision research." &lt;|"publication, research contribution"</data>
-  <data key="d5">"publication, research contribution"&lt;SEP&gt;8</data>
-  <data key="d6">chunk-667a0a2b5957ead16915a7cfad43c8de</data>
-</edge>
-<edge source="&quot;A. KRIZHEVSKY, I. SUTSKEVER, AND G. E. HINTON&quot;" target="&quot;NIPS &quot;">
-  <data key="d3">16.0</data>
-  <data key="d4">"Their work was published in NIPS (Neural Information Processing Systems), indicating their contribution to machine learning research."&lt;SEP&gt;"Their work was published in NIPS (Neural Information Processing Systems), indicating their contribution to machine learning research." &lt;|"publication, research contribution"</data>
-  <data key="d5">"publication, research contribution"&lt;SEP&gt;8</data>
-  <data key="d6">chunk-667a0a2b5957ead16915a7cfad43c8de</data>
-</edge>
-<edge source="&quot;K. SOOMRO, A. R&quot;" target="&quot;PROC. ICCV &quot;">
+<edge source="&quot;SPATIAL CONVNET&quot;" target="&quot;IMAGENET ILSVRC-2012&quot;">
   <data key="d3">8.0</data>
-  <data key="d4">"Their work was published in Proceedings of the International Conference on Computer Vision (ICCV), indicating their contribution to computer vision research." &lt;|"publication, research contribution"</data>
-  <data key="d5">8</data>
-  <data key="d6">chunk-667a0a2b5957ead16915a7cfad43c8de</data>
+  <data key="d4">"The spatial ConvNet is pre-trained on ImageNet ILSVRC-2012 before fine-tuning on UCF-101, highlighting the transfer learning approach."</data>
+  <data key="d5">"pre-training, transfer learning"</data>
+  <data key="d6">chunk-e09f3481cc62389e84f21a06f6eb3d7f</data>
 </edge>
-<edge source="&quot;MAX-POOLING&quot;" target="&quot;DIMENSIONALITY REDUCTION&quot;">
-  <data key="d3">6.0</data>
-  <data key="d4">"Max-pooling reduces dimensionality while retaining important features, a key step in the ConvNet architecture."</data>
-  <data key="d5">"downsampling, feature preservation"</data>
+<edge source="&quot;OPTICAL FLOW DISPLACEMENT FIELDS D&quot;" target="&quot;96FILTERS&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The 96ﬁlters are trained on optical flow displacement fields to compute spatial derivatives of motion."</data>
+  <data key="d5">"motion capture, convolutional filters"</data>
   <data key="d6">chunk-bb08a015abf427870e566013b6eb1dd2</data>
 </edge>
-<edge source="&quot;A. KARPATHY, G. TODERICI, S. SHETTY, T. LEUNG, R. SUKTHANKAR, AND L. FEI-FEI&quot;" target="&quot;PROC. CVPR &quot;">
-  <data key="d3">16.0</data>
-  <data key="d4">"Their work was published in Proceedings of the Conference on Computer Vision and Pattern Recognition (CVPR), indicating their contribution to computer vision research."&lt;SEP&gt;"Their work was published in Proceedings of the Conference on Computer Vision and Pattern Recognition (CVPR), indicating their contribution to computer vision research." &lt;|"publication, research contribution"</data>
-  <data key="d5">"publication, research contribution"&lt;SEP&gt;8</data>
+<edge source="&quot;ICML&quot;" target="&quot;NIPS&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"Both are leading conferences for machine learning research."</data>
+  <data key="d5">&lt;"conferences, machine learning"</data>
   <data key="d6">chunk-667a0a2b5957ead16915a7cfad43c8de</data>
 </edge>
-<edge source="&quot;LOCAL RESPONSE NORMALIZATION&quot;" target="&quot;FEATURE MAP NORMALIZATION&quot;">
-  <data key="d3">5.0</data>
-  <data key="d4">"Local Response Normalization is applied within each feature map to normalize and improve the network's performance."</data>
-  <data key="d5">"normalization technique, feature map improvement"</data>
-  <data key="d6">chunk-bb08a015abf427870e566013b6eb1dd2</data>
+<edge source="&quot;PROC. ICCV &quot;" target="&quot;H. WANG, R. FERGUS, C. SCHMID&quot;">
+  <data key="d3">14.0</data>
+  <data key="d4">"H. Wang and colleagues' work on action recognition with improved trajectories and DeepFlow was presented at Proc. ICCV."</data>
+  <data key="d5">"event participation, research collaboration"</data>
+  <data key="d6">chunk-640259871e7614dd8e5d3e2cd2bf19ea</data>
 </edge>
-<edge source="&quot;RELU ACTIVATION FUNCTION&quot;" target="&quot;HIDDEN LAYERS&quot;">
+<edge source="&quot;96FILTERS&quot;" target="&quot;TEMPORAL DERIVATIVES&quot;">
   <data key="d3">7.0</data>
-  <data key="d4">"ReLU activation functions are used in hidden layers of the ConvNet to introduce non-linearity and improve model performance."</data>
-  <data key="d5">"non-linear activation, improvement"</data>
+  <data key="d4">"Some ﬁlters compute temporal derivatives to capture changes in motion over time, alongside spatial derivative computations."</data>
+  <data key="d5">"motion change, temporal analysis"</data>
   <data key="d6">chunk-bb08a015abf427870e566013b6eb1dd2</data>
 </edge>
-<edge source="&quot;EVENT&quot;" target="&quot;G. W. TAYLOR, R. FERGUS, Y. LECUN, C. BREGLER, H. WANG, M. M. ULLAH, A. KLÄSER, I. LAPTEV, P. WEINZAEPFEL, J. REVAUD, Z. HARCHAOUI, C. SCHMID&quot;">
-  <data key="d3">9.0</data>
-  <data key="d4">"All these researchers and their collaborators have presented papers at various events such as ECCV."</data>
-  <data key="d5">"conference participation, research dissemination"</data>
-  <data key="d6">chunk-640259871e7614dd8e5d3e2cd2bf19ea</data>
+<edge source="&quot;RELU ACTIVATION FUNCTION&quot;" target="&quot;MAX-POOLING&quot;">
+  <data key="d3">14.0</data>
+  <data key="d4">"ReLU activation is often used in conjunction with max-pooling to introduce non-linearity and reduce spatial dimensions respectively."</data>
+  <data key="d5">"activation, downsampling"</data>
+  <data key="d6">chunk-bb08a015abf427870e566013b6eb1dd2</data>
 </edge>
-<edge source="&quot;ECCV, ICCV WORKSHOP ON ACTION RECOGNITION WITH A LARGE NUMBER OF CLASSES, PROC. BMVC, PROC. CVPR, PROC. ECCV, PROC. ICCV, PROC. NIPS, ICCV WORKSHOP&quot;" target="&quot;M. D. ZEILER, R. FERGUS, C. BREGLER, G. W. TAYLOR, H. WANG, P. WEINZAEPFEL, J. REVAUD, Z. HARCHAOUI&quot;">
+<edge source="&quot;MULTI-TASK LEARNING&quot;" target="&quot;UCF-101 DATASET&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"Multi-task learning is applied by combining the training from UCF-101 and HMDB-51 datasets to improve generalization across tasks."</data>
+  <data key="d5">"dataset combination, cross-task learning"</data>
+  <data key="d6">chunk-bb08a015abf427870e566013b6eb1dd2</data>
+</edge>
+<edge source="&quot;MULTI-TASK LEARNING&quot;" target="&quot;HMDB-51 DATASET&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"Multi-task learning is used on the HMDB-51 dataset for training and testing ConvNets, aiding in learning generalized representations across tasks."</data>
+  <data key="d5">"cross-task learning, dataset utilization"</data>
+  <data key="d6">chunk-bb08a015abf427870e566013b6eb1dd2</data>
+</edge>
+<edge source="&quot;MULTI-TASK LEARNING&quot;" target="&quot;TECHNIQUE&quot;">
   <data key="d3">9.0</data>
-  <data key="d4">"conference participation, research community"</data>
-  <data key="d5">"These researchers have presented their work at various conferences and workshops."</data>
-  <data key="d6">chunk-640259871e7614dd8e5d3e2cd2bf19ea</data>
+  <data key="d4">"Multi-task learning involves training a single model on multiple related tasks, enhancing its generalization and performance on both datasets."</data>
+  <data key="d5">&lt;"training technique, multi-tasking"</data>
+  <data key="d6">chunk-eb84389e2cb0fb2dfc96d4777be87037</data>
+</edge>
+<edge source="&quot;MULTI-TASK LEARNING&quot;" target="&quot;SPATIO-TEMPORAL CONVNET&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"Multi-task learning is applied to the Temporal ConvNet, enhancing its effectiveness for optical flow-based input."</data>
+  <data key="d5">"training method, improved accuracy"</data>
+  <data key="d6">chunk-86f4b10d1cdb4e6ca763c0d4de0db9cd</data>
+</edge>
+<edge source="&quot;MULTI-GPU TRAINING&quot;" target="&quot;SINGLE-GPU TRAINING&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"Multi-GPU training offers a 3:2 times speed-up over single-GPU training, indicating its superiority for faster model training. "</data>
+  <data key="d5">"speed improvement, comparison"</data>
+  <data key="d6">chunk-e09f3481cc62389e84f21a06f6eb3d7f</data>
+</edge>
+<edge source="&quot;MINI-BATCH STOCHASTIC GRADIENT DESCENT WITH MOMENTUM&quot;" target="&quot;TRAINING PROCEDURE&quot;">
+  <data key="d3">18.0</data>
+  <data key="d4">"Mini-batch SGD with momentum is used for the training procedure of the ConvNet to update weights and improve convergence."</data>
+  <data key="d5">"optimization algorithm, weight update"</data>
+  <data key="d6">chunk-bb08a015abf427870e566013b6eb1dd2</data>
+</edge>
+<edge source="&quot;OPENCV TOOLBOX&quot;" target="&quot;OPTICAL FLOW COMPUTATION&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"The off-the-shelf GPU implementation of optical flow from OpenCV is used for pre-computed optical flow in the experiments. "</data>
+  <data key="d5">"implementation, dependency"</data>
+  <data key="d6">chunk-e09f3481cc62389e84f21a06f6eb3d7f</data>
+</edge>
+<edge source="&quot;TOP-5 ERROR&quot;" target="&quot;TESTING&quot;">
+  <data key="d3">16.0</data>
+  <data key="d4">"Top-5 error is evaluated during testing to assess the performance of the ConvNet model."</data>
+  <data key="d5">"performance evaluation, test metric"</data>
+  <data key="d6">chunk-bb08a015abf427870e566013b6eb1dd2</data>
+</edge>
+<edge source="&quot;TEMPORAL STREAM CONVNET&quot;" target="&quot;SPATIAL RECOGNITION STREAM&quot;">
+  <data key="d3">14.0</data>
+  <data key="d4">"The temporal stream ConvNet improves upon the spatial recognition stream by exploiting motion to enhance accuracy."</data>
+  <data key="d5">"improvement, motion exploitation"</data>
+  <data key="d6">chunk-cf87ec63a4b1e44cb5a04807041bf1c1</data>
+</edge>
+<edge source="&quot;TEMPORAL STREAM CONVNET&quot;" target="&quot;ACTION CLASSIFICATION&quot;">
+  <data key="d3">14.0</data>
+  <data key="d4">"The temporal stream ConvNet plays a crucial role in action classification by exploiting motion to improve accuracy."</data>
+  <data key="d5">"classification, improvement"</data>
+  <data key="d6">chunk-cf87ec63a4b1e44cb5a04807041bf1c1</data>
+</edge>
+<edge source="&quot;OPTICAL FLOW STACKING&quot;" target="&quot;TRAJECTORY STACKING&quot;">
+  <data key="d3">12.0</data>
+  <data key="d4">"Optical flow stacking and trajectory stacking are different techniques for encoding motion in ConvNet inputs, each with its own method of handling optical flow data."</data>
+  <data key="d5">"motion encoding, technique comparison"</data>
+  <data key="d6">chunk-cf87ec63a4b1e44cb5a04807041bf1c1</data>
+</edge>
+<edge source="&quot;OPTICAL FLOW STACKING&quot;" target="&quot;BI-DIRECTIONAL OPTICAL FLOW&quot;">
+  <data key="d3">10.0</data>
+  <data key="d4">"Bi-directional optical flow is an extension to the forward optical flow used in stacking techniques, providing more comprehensive motion understanding."</data>
+  <data key="d5">"motion representation, enhancement"</data>
+  <data key="d6">chunk-cf87ec63a4b1e44cb5a04807041bf1c1</data>
+</edge>
+<edge source="&quot;STILL FRAMES&quot;" target="&quot;SPATIAL RECOGNITION STREAM&quot;">
+  <data key="d3">16.0</data>
+  <data key="d4">"Still frames are the input data for the spatial recognition stream, which is part of the action classification process."</data>
+  <data key="d5">"data input, recognition stream"</data>
+  <data key="d6">chunk-cf87ec63a4b1e44cb5a04807041bf1c1</data>
+</edge>
+<edge source="&quot;HMDB-51&quot;" target="&quot;TWO-STREAM MODEL&quot;">
+  <data key="d3">8.0</data>
+  <data key="d4">"The Two-stream model is also evaluated on HMDB-51 dataset, demonstrating comparable results to state-of-the-art models."</data>
+  <data key="d5">"evaluation, competitive performance"</data>
+  <data key="d6">chunk-86f4b10d1cdb4e6ca763c0d4de0db9cd</data>
+</edge>
+<edge source="&quot;MEAN FLOW SUBTRACTION&quot;" target="&quot;DISPLACEMENT FIELD D&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"The mean vector of each displacement field d is subtracted during the mean flow subtraction process." "</data>
+  <data key="d5">"data processing, technique application"</data>
+  <data key="d6">chunk-34a54fcc59f0d516a7e1556a7de2f32b</data>
+</edge>
+<edge source="&quot;STACKED OPTICAL FLOWS&quot;" target="&quot;MEAN DISPLACEMENT SUBTRACTION&quot;">
+  <data key="d3">6.0</data>
+  <data key="d4">"Both techniques are mentioned as part of the input configurations."</data>
+  <data key="d5">&lt;"complementary, preprocessing"</data>
+  <data key="d6">chunk-eb84389e2cb0fb2dfc96d4777be87037</data>
+</edge>
+<edge source="&quot;STACKED OPTICAL FLOWS&quot;" target="&quot;ALEX&quot;">
+  <data key="d3">7.0</data>
+  <data key="d4">"Alex's team assesses the effect of using multiple stacked optical flows."</data>
+  <data key="d5">&lt;"assessment, input configuration"</data>
+  <data key="d6">chunk-eb84389e2cb0fb2dfc96d4777be87037</data>
+</edge>
+<edge source="&quot;BI-DIRECTIONAL OPTICAL FLOW&quot;" target="&quot;ALEX&quot;">
+  <data key="d3">6.0</data>
+  <data key="d4">"The team also uses the bi-directional optical flow in their analysis."</data>
+  <data key="d5">&lt;"evaluation, alternative method"</data>
+  <data key="d6">chunk-eb84389e2cb0fb2dfc96d4777be87037</data>
 </edge>
 </graph></graphml>

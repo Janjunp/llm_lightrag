@@ -1,0 +1,124 @@
+2025-01-19 22:05:15,342 - lightrag - INFO - Logger initialized for working directory: ./dickens
+2025-01-19 22:05:15,347 - lightrag - INFO - Load KV llm_response_cache with 0 data
+2025-01-19 22:05:15,348 - lightrag - INFO - Load KV full_docs with 0 data
+2025-01-19 22:05:15,351 - lightrag - INFO - Load KV text_chunks with 0 data
+2025-01-19 22:05:15,357 - lightrag - INFO - Loaded document status storage with 0 records
+2025-01-19 22:05:15,366 - lightrag - INFO - Processing 1 new unique documents
+2025-01-19 22:05:19,441 - lightrag - INFO - Inserting 10 vectors to chunks
+2025-01-19 22:08:30,482 - lightrag - INFO - Logger initialized for working directory: ./dickens
+2025-01-19 22:08:30,484 - lightrag - INFO - Load KV llm_response_cache with 0 data
+2025-01-19 22:08:30,487 - lightrag - INFO - Load KV full_docs with 0 data
+2025-01-19 22:08:30,492 - lightrag - INFO - Load KV text_chunks with 0 data
+2025-01-19 22:08:30,499 - lightrag - INFO - Loaded document status storage with 0 records
+2025-01-19 22:08:33,942 - lightrag - INFO - Processing 1 new unique documents
+2025-01-19 22:08:34,977 - lightrag - INFO - Inserting 10 vectors to chunks
+2025-01-19 22:13:47,471 - lightrag - INFO - Logger initialized for working directory: ./dickens
+2025-01-19 22:13:47,474 - lightrag - INFO - Load KV llm_response_cache with 0 data
+2025-01-19 22:13:47,486 - lightrag - INFO - Load KV full_docs with 0 data
+2025-01-19 22:13:47,492 - lightrag - INFO - Load KV text_chunks with 0 data
+2025-01-19 22:13:47,508 - lightrag - INFO - Loaded document status storage with 0 records
+2025-01-19 22:13:47,513 - lightrag - INFO - Processing 1 new unique documents
+2025-01-19 22:13:51,425 - lightrag - INFO - Inserting 10 vectors to chunks
+2025-01-19 22:21:48,152 - lightrag - INFO - Inserting entities into storage...
+2025-01-19 22:21:48,176 - lightrag - INFO - Inserting relationships into storage...
+2025-01-19 22:21:48,189 - lightrag - INFO - Inserting 126 vectors to entities
+2025-01-19 22:21:52,165 - lightrag - INFO - Inserting 91 vectors to relationships
+2025-01-19 22:21:53,695 - lightrag - INFO - Writing graph with 154 nodes, 91 edges
+2025-01-19 22:21:56,669 - lightrag - INFO - kw_prompt result:
+2025-01-19 22:21:56,670 - lightrag - INFO - Using hybrid mode for query processing
+2025-01-19 22:21:56,765 - lightrag - INFO - Local query uses 60 entites, 55 relations, 3 text units
+2025-01-19 22:21:56,925 - lightrag - INFO - Global query uses 84 entites, 60 relations, 3 text units
+2025-01-21 10:45:40,939 - lightrag - INFO - Logger initialized for working directory: ./dickens
+2025-01-21 10:45:40,952 - lightrag - INFO - Load KV llm_response_cache with 2 data
+2025-01-21 10:45:40,954 - lightrag - INFO - Load KV full_docs with 1 data
+2025-01-21 10:45:40,960 - lightrag - INFO - Load KV text_chunks with 10 data
+2025-01-21 10:45:40,981 - lightrag - INFO - Loaded graph from ./dickens/graph_chunk_entity_relation.graphml with 154 nodes, 91 edges
+2025-01-21 10:45:41,012 - lightrag - INFO - Loaded document status storage with 1 records
+2025-01-21 10:45:41,016 - lightrag - INFO - All documents have been processed or are duplicates
+2025-01-21 10:47:21,822 - lightrag - INFO - Logger initialized for working directory: ./dickens
+2025-01-21 10:47:21,825 - lightrag - INFO - Load KV llm_response_cache with 0 data
+2025-01-21 10:47:21,829 - lightrag - INFO - Load KV full_docs with 0 data
+2025-01-21 10:47:21,833 - lightrag - INFO - Load KV text_chunks with 0 data
+2025-01-21 10:47:21,845 - lightrag - INFO - Loaded document status storage with 0 records
+2025-01-21 10:47:21,850 - lightrag - INFO - Processing 1 new unique documents
+2025-01-21 10:47:25,685 - lightrag - INFO - Inserting 10 vectors to chunks
+2025-01-21 10:47:25,902 - lightrag - ERROR - Failed to process document doc-70a8fa8c1103b79fb5dc9ca2ed8bb7d2: Server disconnected without sending a response.
+Traceback (most recent call last):
+  File "/mnt/workspace/anaconda3/envs/LightRAG/lib/python3.10/site-packages/httpx/_transports/default.py", line 72, in map_httpcore_exceptions
+    yield
+  File "/mnt/workspace/anaconda3/envs/LightRAG/lib/python3.10/site-packages/httpx/_transports/default.py", line 236, in handle_request
+    resp = self._pool.handle_request(req)
+  File "/mnt/workspace/anaconda3/envs/LightRAG/lib/python3.10/site-packages/httpcore/_sync/connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "/mnt/workspace/anaconda3/envs/LightRAG/lib/python3.10/site-packages/httpcore/_sync/connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+  File "/mnt/workspace/anaconda3/envs/LightRAG/lib/python3.10/site-packages/httpcore/_sync/connection.py", line 103, in handle_request
+    return self._connection.handle_request(request)
+  File "/mnt/workspace/anaconda3/envs/LightRAG/lib/python3.10/site-packages/httpcore/_sync/http11.py", line 136, in handle_request
+    raise exc
+  File "/mnt/workspace/anaconda3/envs/LightRAG/lib/python3.10/site-packages/httpcore/_sync/http11.py", line 106, in handle_request
+    ) = self._receive_response_headers(**kwargs)
+  File "/mnt/workspace/anaconda3/envs/LightRAG/lib/python3.10/site-packages/httpcore/_sync/http11.py", line 177, in _receive_response_headers
+    event = self._receive_event(timeout=timeout)
+  File "/mnt/workspace/anaconda3/envs/LightRAG/lib/python3.10/site-packages/httpcore/_sync/http11.py", line 231, in _receive_event
+    raise RemoteProtocolError(msg)
+httpcore.RemoteProtocolError: Server disconnected without sending a response.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/workspace/llm_lightrag/lightrag/lightrag.py", line 461, in ainsert
+    raise e
+  File "/mnt/workspace/llm_lightrag/lightrag/lightrag.py", line 417, in ainsert
+    await self.chunks_vdb.upsert(chunks)
+  File "/mnt/workspace/llm_lightrag/lightrag/storage.py", line 146, in upsert
+    embeddings_list = await asyncio.gather(*embedding_tasks)
+  File "/mnt/workspace/llm_lightrag/lightrag/storage.py", line 138, in wrapped_task
+    result = await self.embedding_func(batch)
+  File "/mnt/workspace/llm_lightrag/lightrag/utils.py", line 128, in wait_func
+    result = await func(*args, **kwargs)
+  File "/mnt/workspace/llm_lightrag/lightrag/utils.py", line 67, in __call__
+    return await self.func(*args, **kwargs)
+  File "/mnt/workspace/llm_lightrag/lightrag/llm.py", line 1144, in ollama_embedding
+    data = ollama_client.embeddings(model=embed_model, prompt=text)
+  File "/mnt/workspace/anaconda3/envs/LightRAG/lib/python3.10/site-packages/ollama/_client.py", line 379, in embeddings
+    return self._request(
+  File "/mnt/workspace/anaconda3/envs/LightRAG/lib/python3.10/site-packages/ollama/_client.py", line 177, in _request
+    return cls(**self._request_raw(*args, **kwargs).json())
+  File "/mnt/workspace/anaconda3/envs/LightRAG/lib/python3.10/site-packages/ollama/_client.py", line 118, in _request_raw
+    r = self._client.request(*args, **kwargs)
+  File "/mnt/workspace/anaconda3/envs/LightRAG/lib/python3.10/site-packages/httpx/_client.py", line 837, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+  File "/mnt/workspace/anaconda3/envs/LightRAG/lib/python3.10/site-packages/httpx/_client.py", line 926, in send
+    response = self._send_handling_auth(
+  File "/mnt/workspace/anaconda3/envs/LightRAG/lib/python3.10/site-packages/httpx/_client.py", line 954, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "/mnt/workspace/anaconda3/envs/LightRAG/lib/python3.10/site-packages/httpx/_client.py", line 991, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "/mnt/workspace/anaconda3/envs/LightRAG/lib/python3.10/site-packages/httpx/_client.py", line 1027, in _send_single_request
+    response = transport.handle_request(request)
+  File "/mnt/workspace/anaconda3/envs/LightRAG/lib/python3.10/site-packages/httpx/_transports/default.py", line 235, in handle_request
+    with map_httpcore_exceptions():
+  File "/mnt/workspace/anaconda3/envs/LightRAG/lib/python3.10/contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/mnt/workspace/anaconda3/envs/LightRAG/lib/python3.10/site-packages/httpx/_transports/default.py", line 89, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.RemoteProtocolError: Server disconnected without sending a response.
+
+2025-01-21 10:47:25,951 - lightrag - INFO - Writing graph with 0 nodes, 0 edges
+2025-01-21 10:53:04,006 - lightrag - INFO - Logger initialized for working directory: ./dickens
+2025-01-21 10:53:04,009 - lightrag - INFO - Load KV llm_response_cache with 0 data
+2025-01-21 10:53:04,011 - lightrag - INFO - Load KV full_docs with 0 data
+2025-01-21 10:53:04,014 - lightrag - INFO - Load KV text_chunks with 0 data
+2025-01-21 10:53:04,026 - lightrag - INFO - Loaded document status storage with 0 records
+2025-01-21 10:53:04,030 - lightrag - INFO - Processing 1 new unique documents
+2025-01-21 10:53:05,015 - lightrag - INFO - Inserting 10 vectors to chunks
+2025-01-21 10:57:19,817 - lightrag - INFO - Inserting entities into storage...
+2025-01-21 10:57:19,837 - lightrag - INFO - Inserting relationships into storage...
+2025-01-21 10:57:19,848 - lightrag - INFO - Inserting 87 vectors to entities
+2025-01-21 10:57:21,623 - lightrag - INFO - Inserting 74 vectors to relationships
+2025-01-21 10:57:22,839 - lightrag - INFO - Writing graph with 101 nodes, 74 edges
+2025-01-21 10:57:24,778 - lightrag - INFO - kw_prompt result:
+2025-01-21 10:57:24,778 - lightrag - INFO - Using hybrid mode for query processing
+2025-01-21 10:57:24,871 - lightrag - INFO - Local query uses 60 entites, 67 relations, 3 text units
+2025-01-21 10:57:24,983 - lightrag - INFO - Global query uses 70 entites, 60 relations, 3 text units
